@@ -270,7 +270,7 @@ def main():
     # 讀取環境變數（由 GitHub Actions Secrets 注入）
     gmail_token  = os.environ.get("GMAIL_TOKEN_JSON", "")
     gdrive_token = os.environ.get("GDRIVE_TOKEN_JSON", "")
-    folder_id    = os.environ.get("BROCHURE_FOLDER_ID", "1dext3fFM9TIzMjb9wo4YB0xnxADs7qZ3")
+    folder_id    = os.environ.get("BROCHURE_FOLDER_ID", "1f-2EU0s_fW4SvJwijiKwr3Z6xRXHoHoo")
 
     todos = []
 
@@ -302,9 +302,18 @@ def main():
                 sender  = headers.get("From", "").lower()
                 snippet = detail.get("snippet", "")
 
-                if not is_business_email(subject, sender, snippet):
+                is_biz = is_business_email(subject, sender, snippet)
+                has_dl = has_deadline(subject, snippet) if is_biz else False
+                if is_biz and has_dl:
+                    print(f"    ✓ 業務+截止：{subject[:50]}")
+                elif is_biz:
+                    print(f"    ~ 業務但無截止：{subject[:50]}")
+                else:
+                    pass  # 非業務郵件不輸出，避免太多雜訊
+
+                if not is_biz:
                     continue
-                if not has_deadline(subject, snippet):
+                if not has_dl:
                     continue
 
                 combined = subject + " " + snippet
@@ -339,6 +348,43 @@ def main():
         print("  [略過] GMAIL_TOKEN_JSON 未設定")
 
     # ── 2. 讀取 Google Drive 簡章資料夾 ─────────────────
+    # 簡章關鍵字 → 對應的時程節點
+    # 格式：檔名關鍵字 → [(月, 日, task_id, action說明), ...]
+    BROCHURE_SCHEDULES = {
+        "暑假轉學考": [
+            (5, 25, "t05", "暑轉簡章公告，開放下載"),
+            (6,  8, "t05", "暑轉網路報名截止（繳費至6/8下午11:59）"),
+            (6,  9, "t05", "暑轉報名資料上傳截止（12:00止）"),
+            (6, 18, "t05", "暑轉準考證列印開始"),
+            (6, 26, "t05", "暑轉申請退費截止"),
+            (7, 15, "t05", "暑轉榜單公告及成績查詢"),
+            (7, 20, "t05", "暑轉成績複查截止"),
+            (8,  4, "t05", "暑轉正取生報到截止"),
+            (9,  7, "t05", "暑轉備取生最後遞補日"),
+        ],
+        "特殊選才": [
+            (9, 17, "t01", "特殊選才開放報名"),
+            (10, 1, "t01", "特殊選才報名截止"),
+            (11, 1, "t01", "特殊選才甄試"),
+            (11,12, "t01", "特殊選才放榜"),
+            (11,25, "t01", "特殊選才正取生報到截止"),
+        ],
+        "碩士班甄試": [
+            (9, 17, "t12", "碩士班甄試開放報名"),
+            (10, 1, "t12", "碩士班甄試報名截止"),
+            (10, 2, "t12", "碩士班審查資料上傳截止"),
+            (11, 1, "t12", "碩士班各系所甄試"),
+            (11,12, "t12", "碩士班甄試放榜"),
+            (11,25, "t12", "碩士班甄試正取生報到截止"),
+        ],
+        "申請入學": [
+            (3,  1, "t02", "申請入學開放報名"),
+            (4, 30, "t02", "申請入學報名截止"),
+            (5, 18, "t02", "各學系書審結果擲回截止"),
+            (5, 28, "t02", "申請入學放榜"),
+        ],
+    }
+
     if gdrive_token:
         print("  讀取 Google Drive 簡章資料夾...")
         try:
@@ -352,24 +398,53 @@ def main():
             print(f"    檔案數：{len(files)}")
 
             for f in files:
-                # 只讀取「名稱中含有本月數字」或「近期修改」的檔案
                 fname = f["name"]
-                # 從檔名抽取關鍵字
-                task = match_task(fname)
+
+                # 先嘗試從預設時程表比對
+                matched_schedule = None
+                for keyword, schedules in BROCHURE_SCHEDULES.items():
+                    if keyword in fname:
+                        matched_schedule = (keyword, schedules)
+                        break
+
+                if matched_schedule:
+                    keyword, schedules = matched_schedule
+                    print(f"    簡章：{fname}（{keyword}，共{len(schedules)}個時程節點）")
+                    for (mo, day, task_id, action) in schedules:
+                        try:
+                            dl = datetime.date(now.year, mo, day)
+                        except ValueError:
+                            continue
+                        days_diff = (dl - now).days
+                        t = next((x for x in TASKS if x["id"] == task_id), None)
+                        # is_todo=True：本月待辦顯示（-7天到+90天）
+                        # is_todo=False：只在年度時程顯示
+                        is_todo = -7 <= days_diff <= 90
+                        todos.append({
+                            "task_id":   task_id,
+                            "task_name": t["name"] if t else keyword,
+                            "cat":       t["cat"] if t else "A",
+                            "action":    action,
+                            "deadline":  dl.isoformat(),
+                            "month":     mo,
+                            "persons":   t["persons"] if t else ["趙沛滋"],
+                            "source":    "brochure",
+                            "is_todo":   is_todo,
+                            "done":      False,
+                        })
+                        mark = "✓" if is_todo else " "
+                        print(f"    [{mark}] [{dl}] {action}")
+                    continue
+
+                # 若無預設時程，嘗試從檔名抽取日期
                 deadline = parse_deadline(fname, now)
-
-                # 若檔名找不到截止日，略過（Drive API 不提供圖片文字內容）
-                snippet_text = ""
                 if not deadline:
-                    print(f"    [略過] {fname}（找不到截止日期）")
+                    print(f"    [略過] {fname}（找不到截止日期，建議在 BROCHURE_SCHEDULES 新增）")
                     continue
-                if deadline.month != this_month and (deadline - now).days > 90:
-                    print(f"    [略過] {fname}（截止日 {deadline} 不在本月範圍）")
+                if (deadline - now).days < -7 or (deadline - now).days > 90:
                     continue
 
-                combined = fname + " " + snippet_text
-                task = match_task(combined) or task
-
+                task = match_task(fname)
                 todos.append({
                     "task_id":   task["id"] if task else "brochure_misc",
                     "task_name": task["name"] if task else fname[:20],
@@ -386,29 +461,35 @@ def main():
     else:
         print("  [略過] GDRIVE_TOKEN_JSON 未設定")
 
-    # ── 3. 去重 + 排序 ───────────────────────────────────
+    # ── 3. 去重 + 排序，分成本月待辦 vs 全年時程 ──────────
     seen = set()
-    unique_todos = []
+    todos_month  = []   # 本月待辦（is_todo=True 或 Email 來源）
+    todos_all    = []   # 全年時程（簡章全部節點）
+
     for t in sorted(todos, key=lambda x: x["deadline"]):
         key = f"{t['task_id']}_{t['deadline']}"
-        if key not in seen:
-            seen.add(key)
-            unique_todos.append(t)
+        if key in seen:
+            continue
+        seen.add(key)
+        todos_all.append(t)
+        if t.get("source") == "email" or t.get("is_todo", True):
+            todos_month.append(t)
 
     # ── 4. 輸出 todos.json ───────────────────────────────
     output = {
         "updated_at": datetime.datetime.now(
             datetime.timezone(datetime.timedelta(hours=8))
         ).strftime("%Y-%m-%d %H:%M"),
-        "month":  this_month,
-        "todos":  unique_todos,
+        "month":    this_month,
+        "todos":    todos_month,   # 本月待辦
+        "schedule": todos_all,     # 全年時程（含簡章全部節點）
     }
 
     out_path = "todos.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"\n  ✓ 寫出 {out_path}（共 {len(unique_todos)} 筆）")
+    print(f"\n  ✓ 寫出 {out_path}（本月待辦 {len(todos_month)} 筆，全年時程 {len(todos_all)} 筆）")
 
 
 if __name__ == "__main__":
