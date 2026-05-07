@@ -505,18 +505,44 @@ function qJumpPerson(p){qMode='person';qSel=p;switchQTab('person');}
 function qJumpTask(id){qMode='task';qSel=id;switchQTab('task');}
 
 /* ════════════════════════════════════════════════════════
-   年度時程
+   年度時程：優先顯示 todos.json 的 schedule（簡章資料），
+   再合併 SCHEDULE（固定時程），按月份呈現
    ════════════════════════════════════════════════════════ */
 function renderSchedule(){
   const q=document.getElementById('s-search').value.toLowerCase().trim();
   const cat=document.getElementById('s-cat').value;
   const who=document.getElementById('s-who').value;
-  const items=SCHEDULE.filter(s=>{
+
+  // 把 todos.json 的 schedule 轉成統一格式
+  const fromJson=(todosData&&todosData.schedule||[]).map(s=>({
+    month:   new Date(s.deadline+'T00:00:00').getMonth()+1,
+    cat:     s.cat,
+    task:    s.task_name,
+    action:  s.action,
+    who:     (s.persons||[])[0]||'',
+    doc:     '',
+    note:    '',
+    deadline:true,
+    _src:    '簡章',
+  }));
+
+  // 固定時程（SCHEDULE）
+  const fromStatic=SCHEDULE.map(s=>({...s, _src:'時程'}));
+
+  // 合併：簡章優先，再補固定時程（過濾掉已在簡章中出現的同月同業務）
+  const jsonKeys=new Set(fromJson.map(s=>`${s.month}_${s.task}`));
+  const merged=[
+    ...fromJson,
+    ...fromStatic.filter(s=>!jsonKeys.has(`${s.month}_${s.task}`)),
+  ];
+
+  const items=merged.filter(s=>{
     if(cat&&s.cat!==cat)return false;
     if(who&&s.who!==who)return false;
-    if(q&&!s.task.toLowerCase().includes(q)&&!s.action.toLowerCase().includes(q)&&!s.who.includes(q))return false;
+    if(q&&!s.task.toLowerCase().includes(q)&&!s.action.toLowerCase().includes(q)&&!(s.who||'').includes(q))return false;
     return true;
   });
+
   const byMonth={};
   items.forEach(s=>{byMonth[s.month]=byMonth[s.month]||[];byMonth[s.month].push(s);});
   const months=Object.keys(byMonth).map(Number).sort((a,b)=>a-b);
@@ -529,7 +555,23 @@ function renderSchedule(){
       const [bg,br,tx]=CAT_COLORS[s.cat]||['#eee','#ccc','#555'];
       const col=PERSON_COLORS[s.who]||'#888';
       const dlB=s.deadline?`<span class="dl-badge">截止</span>`:'';
-      html+=`<div class="sched-item"><div class="sched-header" onclick="toggleS('${uid}')"><span class="sched-arrow" id="sa-${uid}">▶</span><span class="cat-badge" style="background:${bg};border-color:${br};color:${tx};font-size:9px;padding:1px 7px">${s.cat}</span><span class="sched-task">${s.task}</span><span class="sched-action">${s.action.length>36?s.action.slice(0,36)+'…':s.action}${dlB}</span><span class="sched-who" style="background:${col}18;border-color:${col};color:${col}">${s.who}</span></div><div class="sched-body" id="${uid}"><div class="sched-row"><strong>事項</strong>${s.action}</div><div class="sched-row"><strong>文件</strong>${s.doc}</div>${s.note?`<div class="sched-row"><strong>備注</strong>${s.note}</div>`:''}</div></div>`;
+      const srcB=s._src==='簡章'
+        ?`<span style="font-size:9px;background:#EEEDFE;border:0.5px solid #534AB7;color:#3C3489;padding:1px 6px;border-radius:4px;margin-left:4px">簡章</span>`:'';
+      const whoTag=s.who?`<span class="sched-who" style="background:${col}18;border-color:${col};color:${col}">${s.who}</span>`:'';
+      html+=`<div class="sched-item">
+        <div class="sched-header" onclick="toggleS('${uid}')">
+          <span class="sched-arrow" id="sa-${uid}">▶</span>
+          <span class="cat-badge" style="background:${bg};border-color:${br};color:${tx};font-size:9px;padding:1px 7px">${s.cat}</span>
+          <span class="sched-task">${s.task}${srcB}</span>
+          <span class="sched-action">${s.action.length>34?s.action.slice(0,34)+'…':s.action}${dlB}</span>
+          ${whoTag}
+        </div>
+        <div class="sched-body" id="${uid}">
+          <div class="sched-row"><strong>事項</strong>${s.action}</div>
+          ${s.doc?`<div class="sched-row"><strong>文件</strong>${s.doc}</div>`:''}
+          ${s.note?`<div class="sched-row"><strong>備注</strong>${s.note}</div>`:''}
+        </div>
+      </div>`;
     });
     html+='</div>';
   });
