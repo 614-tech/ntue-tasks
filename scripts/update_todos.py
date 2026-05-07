@@ -197,25 +197,68 @@ def match_task(text):
 
 def is_business_email(subject, sender, snippet):
     """判斷是否為與招生業務相關的郵件"""
+    subject_lower = subject.lower()
     combined = (subject + " " + snippet).lower()
 
-    # 過濾噪音
-    for noise in NOISE_SUBJECTS:
-        if noise in combined:
-            return False
+    # 明確排除（全校公告且與招生無關）
+    noise = ["割草", "水運會", "餐廳問卷", "新書發表",
+             "教師徵選", "教師甄選", "新聘專任", "徵才通知",
+             "體育用品", "無人機", "電動車"]
+    if any(n in subject for n in noise):
+        return False
 
-    # 發件人或收件對象是組內人員才算業務郵件
-    if not any(e in sender for e in STAFF_EMAILS):
-        # 但若主旨含業務關鍵字，仍保留
-        business_kws = ["招生", "簡章", "甄試", "入學", "報名", "錄取", "公文", "限辦"]
-        if not any(k in combined for k in business_kws):
-            return False
+    # 公文系統通知 → 一律保留
+    if "公文線上簽核" in subject:
+        return True
 
-    return True
+    # 組內人員寄出的郵件 → 保留
+    if any(e in sender for e in STAFF_EMAILS):
+        return True
+
+    # 主旨含業務關鍵字 → 保留
+    biz_kws = ["招生", "簡章", "甄試", "入學", "報名", "錄取",
+               "行政會議", "分層負責", "校務評鑑", "校務基金",
+               "特殊選才", "外國學生", "轉學", "資安", "個資",
+               "消防", "預算", "提案", "總量", "工作報告"]
+    if any(k in combined for k in biz_kws):
+        return True
+
+    return False
+
+    # 公文系統通知直接保留
+    if "公文線上簽核" in subject or "限辦日" in snippet:
+        return True
+
+    # 組內人員寄出的郵件直接保留
+    if any(e in sender for e in STAFF_EMAILS):
+        return True
+
+    # 收件含組內人員且主旨有業務關鍵字
+    business_kws = ["招生", "簡章", "甄試", "入學", "報名", "錄取",
+                    "公文", "限辦", "行政會議", "分層負責", "校務",
+                    "特殊選才", "申請入學", "轉學", "外國學生",
+                    "資安", "個資", "消防", "預算"]
+    if any(k in combined for k in business_kws):
+        return True
+
+    return False
+
+# 截止日偵測：多組 regex 組合，涵蓋各種中文 Email 格式
+import re as _re
+_DEADLINE_RE = [
+    _re.compile(r'[0-9]{1,2}[月/][0-9]{1,2}.{0,6}(?:前|截止|中午|下班)'),
+    _re.compile(r'(?:前|截止|中午|下班).{0,3}[0-9]{1,2}[月/][0-9]{1,2}'),
+    _re.compile(r'1[01][0-9][年/][0-9]{1,2}[月/][0-9]{1,2}'),
+    _re.compile(r'限辦日'),
+]
 
 def has_deadline(subject, snippet):
     combined = subject + " " + snippet
-    return any(t in combined for t in DEADLINE_TRIGGERS)
+    # 快速關鍵字預篩
+    quick = ["前回覆","截止","限辦","前擲回","前回傳","中午前","下班前","前惠傳","請盡速"]
+    if not any(k in combined for k in quick):
+        return False
+    return any(p.search(combined) for p in _DEADLINE_RE)
 
 
 # ── 主邏輯 ──────────────────────────────────────────────
@@ -379,3 +422,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
