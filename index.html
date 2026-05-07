@@ -346,7 +346,9 @@ async function refreshTodos(){
     return;
   }
   todosData=data;
-  document.getElementById('last-updated').textContent=`最後更新：${data.updated_at||'未知'}`;
+  const updatedAt=data.updated_at||'未知';
+  const count=(data.todos||[]).length;
+  document.getElementById('last-updated').textContent=`最後更新：${updatedAt}　共 ${count} 筆待辦`;
   renderMonth();
 }
 
@@ -378,12 +380,12 @@ function renderMonth(){
   const urgLabel=(d)=>{const n=dl(d);if(n<0)return`逾期${Math.abs(n)}天`;if(n===0)return'今天截止';if(n===1)return'明天截止';return`${n}天後截止`;};
   const urgCls=(d)=>{const n=dl(d);if(n<0)return'urg-o';if(n<=3)return'urg-3';if(n<=7)return'urg-7';return'urg-m';};
   const fmtDl=(d)=>{const dt=new Date(d+'T00:00:00');return`${dt.getMonth()+1}/${dt.getDate()}`;};
-  const [bg,border,text]=(cat)=>CAT_COLORS[cat]||['#eee','#ccc','#555'];
+  const getCatColor=(cat)=>CAT_COLORS[cat]||['#eee','#ccc','#555'];
 
   const card=(t)=>{
     const isDone=done.has(t.task_id);
     const col=PERSON_COLORS[t.persons[0]]||'#888';
-    const [cbg,cbr,ctx]=CAT_COLORS[t.cat]||['#eee','#ccc','#555'];
+    const [cbg,cbr,ctx]=getCatColor(t.cat);
     const srcCls=t.source==='email'?'src-email':'src-brochure';
     const srcLbl=t.source==='email'?'Email':'簡章';
     return `<div class="todo-card${isDone?' done':''}">
