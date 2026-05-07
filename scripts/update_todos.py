@@ -292,7 +292,7 @@ def main():
 
             for msg in msgs:
                 detail = gmail.users().messages().get(
-                    userId="me", messageId=msg["id"],
+                    userId="me", id=msg["id"],
                     format="metadata",
                     metadataHeaders=["Subject", "From", "Date"],
                 ).execute()
@@ -358,17 +358,8 @@ def main():
                 task = match_task(fname)
                 deadline = parse_deadline(fname, now)
 
-                # 若檔名找不到截止日，嘗試讀取圖片 snippet（Drive 有時提供）
+                # 若檔名找不到截止日，略過（Drive API 不提供圖片文字內容）
                 snippet_text = ""
-                if not deadline:
-                    # 從 Drive 的 contentSnippet 取得（若有）
-                    file_detail = drive.files().get(
-                        fileId=f["id"],
-                        fields="contentSnippet",
-                    ).execute()
-                    snippet_text = file_detail.get("contentSnippet", "")
-                    deadline = parse_deadline(snippet_text, now)
-
                 if not deadline:
                     print(f"    [略過] {fname}（找不到截止日期）")
                     continue
@@ -422,4 +413,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
