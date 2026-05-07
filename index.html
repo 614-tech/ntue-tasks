@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>招生與宣傳組 業務管理工具</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans TC",-apple-system,BlinkMacSystemFont,sans-serif;background:#f4f4f0;color:#1a1a18;min-height:100vh;padding:20px 16px 60px}
+.page{max-width:920px;margin:0 auto}
+.header{margin-bottom:20px;padding-bottom:14px;border-bottom:1.5px solid #ddd;display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.header h1{font-size:17px;font-weight:500;letter-spacing:.02em}
+.header-sub{font-size:11px;color:#bbb}
+.main-tabs{display:flex;gap:0;border-bottom:1.5px solid #ddd;margin-bottom:20px}
+.main-tab{padding:8px 18px;font-size:13px;border:none;background:none;cursor:pointer;color:#aaa;border-bottom:2px solid transparent;margin-bottom:-1.5px;transition:all .15s;font-family:inherit;letter-spacing:.02em;white-space:nowrap}
+.main-tab.active{color:#1a1a18;font-weight:500;border-bottom-color:#1E3A5F}
+.main-tab:hover:not(.active){color:#555}
+.ctrl-row{display:flex;gap:7px;margin-bottom:13px;flex-wrap:wrap;align-items:center}
+.ctrl-row input,.ctrl-row select{font-size:13px;padding:7px 10px;border:0.5px solid #ccc;border-radius:6px;background:#fff;color:#1a1a18;outline:none;font-family:inherit}
+.ctrl-row input{flex:1;min-width:130px}
+.ctrl-row input:focus,.ctrl-row select:focus{border-color:#1E3A5F}
+.btn-sm{font-size:12px;padding:7px 13px;border:0.5px solid #ccc;border-radius:6px;cursor:pointer;background:#fff;color:#666;white-space:nowrap;font-family:inherit}
+.btn-sm:hover{background:#efefeb}
+.btn-primary{background:#1E3A5F;color:#fff;border-color:#1E3A5F}
+.btn-primary:hover{background:#162d4a}
+.empty{text-align:center;padding:2.5rem;font-size:13px;color:#ccc}
+
+/* ── 本月待辦 ── */
+.todo-banner{background:#1E3A5F;border-radius:9px;padding:14px 18px;margin-bottom:16px;color:#fff;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.todo-banner-title{font-size:14px;font-weight:500}
+.todo-banner-meta{font-size:11px;opacity:.65;margin-top:2px}
+.todo-banner-right{text-align:right;font-size:11px;opacity:.7}
+.todo-section{margin-bottom:18px}
+.todo-section-label{font-size:10px;font-weight:500;color:#aaa;text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px;display:flex;align-items:center;gap:6px}
+.todo-section-label::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%}
+.label-overdue::before{background:#D94F4F}
+.label-urgent::before{background:#E09A30}
+.label-week::before{background:#1E3A5F}
+.label-month::before{background:#2A7A6A}
+.todo-card{background:#fff;border:0.5px solid #e0e0db;border-radius:7px;padding:11px 14px;margin-bottom:5px;display:flex;align-items:center;gap:10px;transition:box-shadow .12s}
+.todo-card:hover{box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.todo-card.done{opacity:.4}
+.todo-urgency{font-size:9px;padding:2px 8px;border-radius:5px;flex-shrink:0;font-weight:500;letter-spacing:.03em;border:0.5px solid}
+.urg-o{background:#FCEBEB;color:#A32D2D;border-color:#D94F4F}
+.urg-3{background:#FDF0E0;color:#7A4E10;border-color:#E09A30}
+.urg-7{background:#EBF0F8;color:#162D4A;border-color:#1E3A5F}
+.urg-m{background:#E4F0EE;color:#1A5A4A;border-color:#2A7A6A}
+.todo-main{flex:1;min-width:0}
+.todo-title{font-size:13px;font-weight:500;line-height:1.4}
+.todo-action{font-size:11px;color:#888;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.todo-right{display:flex;align-items:center;gap:7px;flex-shrink:0}
+.todo-dl{font-size:11px;color:#aaa}
+.todo-src{font-size:9px;padding:1px 7px;border-radius:5px;border:0.5px solid}
+.src-email{background:#E4F0EE;border-color:#2A7A6A;color:#1A5A4A}
+.src-brochure{background:#EEEDFE;border-color:#534AB7;color:#3C3489}
+.todo-who{font-size:10px;padding:2px 8px;border-radius:9px;border:0.5px solid}
+.todo-done-btn{font-size:10px;padding:2px 9px;border:0.5px solid #ddd;border-radius:5px;cursor:pointer;background:#f5f5f0;color:#888;transition:all .12s}
+.todo-done-btn:hover{background:#E4F0EE;border-color:#2A7A6A;color:#1A5A4A}
+.todo-loading{text-align:center;padding:2rem;font-size:13px;color:#aaa}
+.todo-error{background:#FCEBEB;border:0.5px solid #D94F4F;border-radius:7px;padding:12px 16px;font-size:12px;color:#7A2020;margin-bottom:14px}
+
+/* ── 業務查詢（純點選，無展開） ── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:6px}
+.cat-header{grid-column:1/-1;margin-top:14px;display:flex;align-items:center}
+.cat-header:first-child{margin-top:0}
+.cat-badge{display:inline-block;font-size:10px;font-weight:500;padding:2px 10px;border-radius:9px;border:0.5px solid;letter-spacing:.03em}
+.chip{padding:9px 12px;border:0.5px solid #e0e0db;border-radius:7px;cursor:pointer;background:#fff;transition:all .13s;display:flex;flex-direction:column;gap:2px}
+.chip:hover{border-color:#aaa;background:#f9f9f5;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.chip.selected{border-color:#1E3A5F;background:#EBF0F8}
+.chip.selected .chip-name{color:#1E3A5F;font-weight:500}
+.chip.dimmed{opacity:.25}
+.chip-name{font-size:12px;line-height:1.4}
+.avatar{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0}
+.person-chip{display:flex;align-items:center;gap:8px}
+.person-count{font-size:10px;color:#bbb}
+/* 選中後顯示關聯的迷你標籤列（取代展開面板） */
+.inline-tags{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:5px;padding:8px 0 4px;border-bottom:0.5px dashed #e8e8e4;margin-bottom:4px}
+.inline-tag{padding:4px 11px;border-radius:20px;font-size:11px;border:0.5px solid;cursor:pointer;transition:all .12s}
+.inline-tag:hover{filter:brightness(.95)}
+
+/* ── 時程清單（共用） ── */
+.month-block{margin-bottom:20px}
+.month-heading{font-size:13px;font-weight:500;padding:6px 0 8px;border-bottom:1.5px solid #e0e0db;margin-bottom:8px;display:flex;align-items:center;gap:7px}
+.badge-count{font-size:10px;font-weight:400;color:#bbb}
+.today-mark{font-size:9px;background:#1E3A5F;color:#fff;padding:1px 8px;border-radius:7px}
+.sched-item{border:0.5px solid #e0e0db;border-radius:7px;background:#fff;margin-bottom:5px;overflow:hidden}
+.sched-item:hover{box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.sched-header{display:flex;align-items:center;gap:8px;padding:9px 13px;cursor:pointer;min-height:40px;transition:background .12s}
+.sched-header:hover,.sched-header.open{background:#f5f5f0}
+.sched-arrow{font-size:9px;color:#ccc;transition:transform .2s;flex-shrink:0}
+.sched-arrow.open{transform:rotate(90deg)}
+.sched-task{font-size:12px;font-weight:500;width:120px;flex-shrink:0;line-height:1.4}
+.sched-action{font-size:12px;color:#555;flex:1;line-height:1.4}
+.sched-who{font-size:10px;padding:2px 8px;border-radius:9px;border:0.5px solid;flex-shrink:0}
+.dl-badge{display:inline-block;font-size:9px;padding:1px 6px;border-radius:5px;background:#FCEBEB;border:0.5px solid #D94F4F;color:#952020;margin-left:4px;vertical-align:middle}
+.sched-body{padding:10px 14px 12px 32px;border-top:0.5px solid #eee;background:#fafaf8;display:none}
+.sched-body.open{display:block}
+.sched-row{font-size:11px;color:#666;margin-bottom:4px;line-height:1.7;display:flex;gap:6px}
+.sched-row strong{color:#1a1a18;font-weight:500;flex-shrink:0;width:50px}
+
+/* 個人待辦結果摘要 */
+.mine-summary{font-size:12px;color:#aaa;margin-bottom:10px}
+
+@media print{
+  body{background:#fff;padding:8px}
+  .main-tabs,.ctrl-row,.btn-sm,.btn-primary,.todo-done-btn{display:none!important}
+  .sched-body{display:block!important}
+  .sched-item{box-shadow:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header">
+  <h1>招生與宣傳組　業務管理工具</h1>
+  <div class="header-sub" id="last-updated">讀取中…</div>
+</div>
+
+<div class="main-tabs">
+  <button class="main-tab active" id="mt-month"    onclick="switchMain('month')">本月待辦</button>
+  <button class="main-tab"        id="mt-query"    onclick="switchMain('query')">業務查詢</button>
+  <button class="main-tab"        id="mt-schedule" onclick="switchMain('schedule')">年度時程</button>
+  <button class="main-tab"        id="mt-mine"     onclick="switchMain('mine')">個人待辦</button>
+</div>
+
+<!-- 本月待辦 -->
+<div id="pane-month">
+  <div class="ctrl-row">
+    <select id="m-filter-who" onchange="renderMonth()">
+      <option value="">所有人員</option>
+    </select>
+    <select id="m-filter-src" onchange="renderMonth()">
+      <option value="">所有來源</option>
+      <option value="email">Email</option>
+      <option value="brochure">簡章</option>
+    </select>
+    <button class="btn-sm btn-primary" onclick="refreshTodos()">↺ 立即更新</button>
+  </div>
+  <div id="month-list"></div>
+</div>
+
+<!-- 業務查詢 -->
+<div id="pane-query" style="display:none">
+  <div class="ctrl-row">
+    <input type="text" id="q-search" placeholder="搜尋業務名稱或承辦人…" oninput="renderQuery()">
+    <button class="btn-sm" onclick="clearQuery()">清除</button>
+  </div>
+  <div class="sub-tabs" style="display:flex;gap:6px;margin-bottom:13px">
+    <button class="btn-sm" id="qtab-task"   style="background:#1E3A5F;color:#fff;border-color:#1E3A5F" onclick="switchQTab('task')">依業務</button>
+    <button class="btn-sm" id="qtab-person" onclick="switchQTab('person')">依承辦人</button>
+  </div>
+  <div id="q-grid" class="grid"></div>
+</div>
+
+<!-- 年度時程 -->
+<div id="pane-schedule" style="display:none">
+  <div class="ctrl-row">
+    <input type="text" id="s-search" placeholder="搜尋業務或事項…" oninput="renderSchedule()">
+    <select id="s-cat" onchange="renderSchedule()"><option value="">所有類別</option></select>
+    <select id="s-who" onchange="renderSchedule()"><option value="">所有人員</option></select>
+    <button class="btn-sm btn-primary" onclick="window.print()">列印</button>
+  </div>
+  <div id="s-list"></div>
+</div>
+
+<!-- 個人待辦 -->
+<div id="pane-mine" style="display:none">
+  <div class="ctrl-row">
+    <select id="mi-who" onchange="renderMine()" style="font-size:13px">
+      <option value="">請選擇人員…</option>
+    </select>
+    <select id="mi-month" onchange="renderMine()"><option value="">全年</option></select>
+    <select id="mi-cat" onchange="renderMine()"><option value="">所有類別</option></select>
+    <input type="text" id="mi-search" placeholder="搜尋…" oninput="renderMine()" style="flex:1;min-width:90px">
+    <button class="btn-sm" onclick="clearMine()">清除</button>
+  </div>
+  <div class="mine-summary" id="mine-summary"></div>
+  <div id="mine-list"></div>
+</div>
+
+</div><!-- .page -->
+
+<script>
+/* ════════════════════════════════════════════════════════
+   ★ 設定：填入 todos.json 在 Google Drive 的 File ID
+   （執行 update_todos.py 一次後，在 Drive 找到 todos.json
+    右鍵取得連結，連結中 /d/ 和 /view 之間的那串即為 ID）
+   ════════════════════════════════════════════════════════ */
+// GitHub Pages 模式：直接讀取同 repository 的 todos.json
+// 不需要填入任何 ID，部署後自動運作
+const TODOS_JSON_URL = "./todos.json";
+
+/* ════════════════════════════════════════════════════════
+   ★ 資料區一：業務清單
+   ════════════════════════════════════════════════════════ */
+const TASKS = [
+  {id:'t01',cat:'A',name:'特殊選才',persons:['劉玉萍']},
+  {id:'t02',cat:'A',name:'申請入學',persons:['余艾璇']},
+  {id:'t03',cat:'A',name:'繁星推薦',persons:['余艾璇']},
+  {id:'t04',cat:'A',name:'分發入學',persons:['余艾璇']},
+  {id:'t05',cat:'A',name:'暑假轉學考（籌備）',persons:['趙沛滋']},
+  {id:'t06',cat:'A',name:'暑假轉學考（試務）',persons:['趙沛滋']},
+  {id:'t07',cat:'A',name:'音樂系單獨招生',persons:['余艾璇']},
+  {id:'t08',cat:'A',name:'運動績優單獨招生',persons:['余艾璇']},
+  {id:'t09',cat:'A',name:'四技二專特殊選才',persons:['余艾璇']},
+  {id:'t10',cat:'A',name:'四技二專甄選入學',persons:['余艾璇']},
+  {id:'t11',cat:'B',name:'院系所增設調整及招生總量提報',persons:['王于心']},
+  {id:'t12',cat:'C',name:'碩博士班甄試',persons:['王于心']},
+  {id:'t13',cat:'C',name:'碩博士班考試',persons:['王于心']},
+  {id:'t14',cat:'D',name:'外國學生招生',persons:['劉玉萍']},
+  {id:'t15',cat:'D',name:'僑港澳招生',persons:['劉玉萍']},
+  {id:'t16',cat:'D',name:'陸生招生',persons:['劉玉萍']},
+  {id:'t17',cat:'E',name:'身障甄試試務（北四區）',persons:['趙沛滋','劉玉萍']},
+  {id:'t18',cat:'F',name:'招生專業化計畫',persons:['劉育志','高佳嵐','張禧恕','王意涵']},
+  {id:'t19',cat:'G',name:'至高中宣傳',persons:['劉玉萍','趙沛滋']},
+  {id:'t20',cat:'G',name:'高中來校參訪',persons:['劉玉萍','趙沛滋']},
+  {id:'t21',cat:'G',name:'大學博覽會',persons:['劉玉萍','趙沛滋']},
+  {id:'t22',cat:'G',name:'自辦招生專場',persons:['劉玉萍','趙沛滋']},
+  {id:'t23',cat:'G',name:'高中生電子報製作',persons:['陳佳妤','王意涵']},
+  {id:'t24',cat:'G',name:'校園記者招募與管理',persons:['陳佳妤']},
+  {id:'t25',cat:'G',name:'網路廣告行銷與管理',persons:['陳佳妤']},
+  {id:'t26',cat:'G',name:'院系所招生活動經費補助',persons:['趙沛滋']},
+  {id:'t27',cat:'H',name:'ISMS資訊安全管理制度',persons:['王意涵']},
+  {id:'t28',cat:'H',name:'個資保護管理制度（PIMS）',persons:['王意涵']},
+  {id:'t29',cat:'H',name:'自衛消防編組訓練',persons:['王意涵']},
+  {id:'t30',cat:'H',name:'內部控制自行評估',persons:['王意涵']},
+  {id:'t31',cat:'H',name:'風險管理評估',persons:['王意涵']},
+  {id:'t32',cat:'H',name:'職場不法侵害預防評估',persons:['王意涵']},
+  {id:'t33',cat:'H',name:'校務資料庫填報',persons:['余艾璇','趙沛滋']},
+  {id:'t34',cat:'I',name:'經文不利生人數填報',persons:['余艾璇']},
+  {id:'t35',cat:'I',name:'經文不利生宣傳',persons:['趙沛滋','陳佳妤']},
+  {id:'t36',cat:'I',name:'經文不利生應試補助',persons:['余艾璇']},
+  {id:'t37',cat:'I',name:'深耕經費管理',persons:['趙沛滋']},
+  {id:'t38',cat:'J',name:'工讀生管理',persons:['張禧恕']},
+  {id:'t39',cat:'J',name:'各類法規校閱與更新',persons:['劉育志']},
+  {id:'t40',cat:'J',name:'各類工作報告',persons:['劉育志','張禧恕']},
+  {id:'t41',cat:'J',name:'校務評鑑自我改善計畫',persons:['劉育志']},
+  {id:'t42',cat:'J',name:'分層負責明細表修正',persons:['劉育志']},
+  {id:'t43',cat:'J',name:'中長程計畫',persons:['劉育志']},
+  {id:'t44',cat:'K',name:'財物複盤作業',persons:['余艾璇']},
+  {id:'t45',cat:'K',name:'年度校務基金預算書與績效報告',persons:['王于心']},
+  {id:'t46',cat:'K',name:'資通訊經費預算表填報',persons:['王于心']},
+];
+
+/* ════════════════════════════════════════════════════════
+   ★ 資料區二：年度時程
+   ════════════════════════════════════════════════════════ */
+const SCHEDULE = [
+  {month:1,cat:'A',task:'音樂系單獨招生',action:'辦理音樂系獨立招生考試',who:'余艾璇',doc:'考試工作費分配名單；試務相關表件',note:''},
+  {month:1,cat:'J',task:'各類工作報告',action:'準備行政會議提案及執行情形報告',who:'劉育志',doc:'提案單；執行情形報告表',note:'每月中旬截止'},
+  {month:2,cat:'C',task:'碩博士班考試',action:'辦理碩博士班入學考試',who:'王于心',doc:'招生考試工作費名單；試場配置表',note:''},
+  {month:2,cat:'D',task:'僑港澳招生',action:'辦理海外聯招個人申請審查；填寫書面審查費請領清冊',who:'劉玉萍',doc:'審查結果回覆表；書面審查費請領清冊',note:''},
+  {month:2,cat:'D',task:'陸生招生',action:'調查各系所是否參與陸聯會研究所招生；確認學生輔導機制',who:'劉玉萍',doc:'招生計畫調查表；學生輔導機制確認表',note:'2/23前擲回',deadline:true},
+  {month:2,cat:'E',task:'身障甄試試務',action:'開始籌備身障甄試北四區考區事務；接收試務工作手冊及用品',who:'趙沛滋',doc:'試務工作手冊；各考區聯絡人一覽表',note:''},
+  {month:2,cat:'F',task:'招生專業化計畫',action:'回傳申請入學書審資料準備指引及評量尺規覆核表',who:'高佳嵐',doc:'各學系覆核表（核章彩色掃描PDF回傳中山大學）',note:'約2/13前截止',deadline:true},
+  {month:2,cat:'G',task:'高中生電子報',action:'啟動新學期電子報製作；向各系蒐集校友推薦名單',who:'陳佳妤',doc:'電子報內容範本；校友推薦名單（各系2名）',note:''},
+  {month:2,cat:'G',task:'至高中宣傳',action:'申請前進高中校外加班（2-6月），展開各高中校園宣傳活動',who:'劉玉萍',doc:'校外加班及專案加班核准公文',note:''},
+  {month:2,cat:'H',task:'內部控制自行評估',action:'填寫年度內部控制自行評估表；修訂內控手冊',who:'王意涵',doc:'內部控制自行評估表（核章＋掃描PDF）；內控手冊修訂稿',note:'約2/23下班前',deadline:true},
+  {month:2,cat:'H',task:'風險管理評估',action:'依風險管理推動會議決議修正風險評估及處理彙總表',who:'王意涵',doc:'風險評估及處理彙總表（修正處黃底紅字）',note:'約2/23中午前',deadline:true},
+  {month:2,cat:'K',task:'校務基金績效報告',action:'撰擬上一年度校務基金績效報告書；更新招生組業務成果數據',who:'王于心',doc:'績效報告書（修改處紅字黃底標註）',note:'約2/23中午前',deadline:true},
+  {month:2,cat:'K',task:'資通訊經費預算表',action:'填報資通訊經費預算表；申請設備汰換',who:'王于心',doc:'電腦經費預算表；汰換設備序號清單',note:'2/12前截止',deadline:true},
+  {month:3,cat:'D',task:'僑港澳招生',action:'完成海外聯招個人申請審查結果，送出回覆表',who:'劉玉萍',doc:'海外聯招個人申請審查結果回覆表',note:''},
+  {month:3,cat:'E',task:'身障甄試試務',action:'召開北四區身障甄試工作協調會；安排試場及協調各單位',who:'趙沛滋',doc:'工作協調會議議程及紀錄；試場配置表',note:''},
+  {month:3,cat:'E',task:'身障甄試試務',action:'各考區聯絡人一覽表回傳中央大學（3/6前）',who:'趙沛滋',doc:'各考區聯絡人一覽表',note:'',deadline:true},
+  {month:3,cat:'F',task:'招生專業化計畫',action:'送出招生專業化申請計畫書（3/13前送教育部）',who:'高佳嵐',doc:'計畫書正本（核章）；經費申請表；人事費薪資表',note:'',deadline:true},
+  {month:3,cat:'H',task:'ISMS資安管理',action:'指派或確認組內ISMS資安窗口；如有人員異動回報教務長室',who:'王意涵',doc:'ISMS資安窗口回覆表；ISMS文件上傳帳號確認',note:'3/12前截止',deadline:true},
+  {month:3,cat:'H',task:'個資保護制度',action:'回覆組內PIMS個資保護管理制度專責人員；如有異動請更新',who:'王意涵',doc:'PIMS專責人員名單（回覆計網中心）',note:'3/20前截止',deadline:true},
+  {month:3,cat:'H',task:'校務資料庫填報',action:'配合研發處進行當期校務資料庫填報（每學期一次，約53張表冊）',who:'余艾璇',doc:'校庫表冊（線上填報）；資訊公開專區更新',note:'約3/1開始，4月下旬截止'},
+  {month:3,cat:'J',task:'各類法規校閱',action:'校閱組內相關法規是否為最新版本；如有修訂提供Word檔並更新Rpage',who:'劉育志',doc:'法規修訂Word檔；Rpage網頁更新',note:'約3/16前',deadline:true},
+  {month:3,cat:'J',task:'各類工作報告',action:'提供招生業務工作報告（全校導師會議宣達招生相關事項）',who:'劉育志',doc:'工作報告電子檔',note:''},
+  {month:4,cat:'A',task:'申請入學',action:'辦理學士班申請入學書面審查及總成績處理；協調各學系審查委員',who:'余艾璇',doc:'大學線上書審暨總成績處理系統；評量尺規',note:''},
+  {month:4,cat:'D',task:'外國學生招生',action:'申請截止（4/30）；通知各學系5/1起進行線上審查',who:'劉玉萍',doc:'線上審查作業通知；待查款項身份查核（與出納組協調）',note:'5/18中午前擲回',deadline:true},
+  {month:4,cat:'E',task:'身障甄試試務',action:'正式辦理身障甄試考試（約4月下旬）；試後清點試卷及表件',who:'趙沛滋',doc:'試卷；評分表；考生成績資料',note:''},
+  {month:4,cat:'H',task:'消防編組訓練',action:'上半年度自衛消防編組訓練（推派1名同仁參加）',who:'王意涵',doc:'訓練計畫回覆表；人員名單回傳教務長室',note:'4月底前回覆',deadline:true},
+  {month:4,cat:'J',task:'各類工作報告',action:'準備行政會議提案及執行情形報告',who:'劉育志',doc:'提案單；行政會議執行情形報告',note:''},
+  {month:5,cat:'A',task:'特殊選才',action:'調查各學系是否參與下一學年度特殊選才招生；蒐集名額及招生計畫',who:'劉玉萍',doc:'招生調查回條（紙本）；招生計畫（Email）',note:'約5/29前各學系擲回',deadline:true},
+  {month:5,cat:'A',task:'申請入學',action:'辦理學士班申請入學榜單作業；通知考生',who:'余艾璇',doc:'錄取榜單；考生通知信',note:''},
+  {month:5,cat:'D',task:'外國學生招生',action:'催收各學系外國生線上審查結果（5/18中午前截止）',who:'劉玉萍',doc:'各學系審查結果回覆（線上系統）',note:'',deadline:true},
+  {month:5,cat:'F',task:'招生專業化工作小組',action:'辦理當月工作小組會議（Google Meet視訊）',who:'高佳嵐',doc:'會議簡報；種子教師書審評分員訓練資料',note:'每月持續辦理'},
+  {month:5,cat:'H',task:'資安教育訓練',action:'未出席實體課程同仁完成線上資安課程及測驗，至教務長室簽到',who:'王意涵',doc:'線上課程完成截圖；職員資安宣導單測驗紀錄',note:'6/9前完成',deadline:true},
+  {month:5,cat:'J',task:'各類工作報告',action:'準備5月行政會議資料及執行情形報告（5/13前回覆）',who:'劉育志',doc:'執行情形報告表',note:'',deadline:true},
+  {month:5,cat:'J',task:'各類工作報告',action:'辦理學期教師座談會業務報告（招生組）',who:'劉育志',doc:'業務報告投影片',note:''},
+  {month:6,cat:'A',task:'特殊選才',action:'彙整各學系招生計畫，送教育部審核備查',who:'劉玉萍',doc:'特殊選才招生計畫書（各學系）；彙整表',note:''},
+  {month:6,cat:'B',task:'招生總量提報',action:'至教育部「總量提報作業平台」填報各入學管道招生情形',who:'王于心',doc:'各管道招生資料；總量提報表件',note:'6/18-6/30填報',deadline:true},
+  {month:6,cat:'H',task:'資安教育訓練',action:'確認所有同仁資安教育訓練（3小時）完成，留存佐證資料',who:'王意涵',doc:'出席名單或線上完成紀錄',note:'6/9截止',deadline:true},
+  {month:6,cat:'K',task:'校務基金預算書',action:'編製下一年度校務基金預算書（業務計畫及預算總說明）',who:'王于心',doc:'業務計畫及預算總說明（修正處紅字黃底）',note:'主計室通知後辦理'},
+  {month:7,cat:'A',task:'暑假轉學考',action:'辦理學士班暑假轉學考試（名額分配及流用、試務作業）',who:'趙沛滋',doc:'委員會會議紀錄（公文）；暑轉簡章；名額分配表',note:''},
+  {month:7,cat:'A',task:'暑假轉學考',action:'發放暑轉考試工作費',who:'趙沛滋',doc:'招生考試工作費分配名單',note:''},
+  {month:8,cat:'A',task:'特殊選才',action:'完成特殊選才招生簡章草稿審查，確認各學系名額及招生條件',who:'劉玉萍',doc:'特殊選才簡章草稿',note:''},
+  {month:8,cat:'K',task:'資通訊預算',action:'配合計網中心設備汰換申請作業；確認下年度設備需求',who:'王于心',doc:'設備汰換申請單；詢價資料',note:''},
+  {month:9,cat:'A',task:'特殊選才',action:'公告下一學年度特殊選才招生簡章（各學系確認後發布）',who:'劉玉萍',doc:'招生簡章（教育部核定版）；學校網站公告',note:''},
+  {month:9,cat:'C',task:'碩博士班甄試',action:'辦理碩博士班甄試入學考試',who:'王于心',doc:'考試工作費名單；試場配置；試卷',note:''},
+  {month:9,cat:'F',task:'招生專業化工作小組',action:'辦理當月工作小組會議；審視書審結果及評分信度',who:'高佳嵐',doc:'會議簡報；評分信度分析報告',note:''},
+  {month:9,cat:'H',task:'校務資料庫填報',action:'新學期校務資料庫填報開始',who:'余艾璇',doc:'當期校庫表冊（線上填報）',note:''},
+  {month:10,cat:'A',task:'特殊選才',action:'開放特殊選才網路報名；協助考生報名疑義處理',who:'劉玉萍',doc:'報名系統；審查資料收件清單',note:''},
+  {month:10,cat:'J',task:'各類法規校閱',action:'校閱組內相關法規；如有修訂更新Rpage並送教務長室',who:'劉育志',doc:'法規修訂Word檔',note:''},
+  {month:10,cat:'J',task:'各類工作報告',action:'準備行政會議提案及執行情形報告',who:'劉育志',doc:'提案單；執行情形報告',note:''},
+  {month:11,cat:'A',task:'特殊選才',action:'辦理特殊選才書面審查及面試',who:'劉玉萍',doc:'審查委員聘函；評分表；面試行程表',note:''},
+  {month:11,cat:'A',task:'特殊選才',action:'公告特殊選才錄取結果；通知考生辦理報到',who:'劉玉萍',doc:'錄取名單；報到通知書；錄取考生名單送主管機關',note:''},
+  {month:11,cat:'H',task:'消防編組訓練',action:'下半年度自衛消防編組訓練（推派1名同仁參加）',who:'王意涵',doc:'訓練計畫；人員名單回傳教務長室',note:''},
+  {month:11,cat:'J',task:'各類工作報告',action:'提供招生業務工作報告（班代聯席會議宣達）',who:'劉育志',doc:'工作報告書',note:''},
+  {month:12,cat:'A',task:'特殊選才',action:'辦理特殊選才正式報到；彙整招生結果',who:'劉玉萍',doc:'報到名冊；招生成果彙整報告',note:''},
+  {month:12,cat:'C',task:'碩博士班甄試',action:'碩博士班甄試錄取名單確認；通知考生報到資訊',who:'王于心',doc:'錄取名冊',note:''},
+  {month:12,cat:'K',task:'年度績效',action:'撰寫年度校務基金績效報告草稿（招生組部分）',who:'王于心',doc:'績效報告書草稿',note:''},
+  {month:12,cat:'J',task:'主管會報',action:'準備12月及下年度首次主管會報資料',who:'劉育志',doc:'業務進度及精進報告',note:''},
+];
+
+/* ════════════════════════════════════════════════════════
+   ★ 人員與類別設定
+   ════════════════════════════════════════════════════════ */
+const PERSONS=['劉育志','趙沛滋','劉玉萍','高佳嵐','余艾璇','陳佳妤','王于心','王意涵','張禧恕','全組'];
+const PERSON_ICONS={'劉育志':'LY','趙沛滋':'ZP','劉玉萍':'LP','高佳嵐':'GJ','余艾璇':'YA','陳佳妤':'CJ','王于心':'WY','王意涵':'WH','張禧恕':'ZH','全組':'ALL'};
+const PERSON_COLORS={'劉育志':'#1E3A5F','趙沛滋':'#534AB7','劉玉萍':'#2A7A6A','高佳嵐':'#854F0B','余艾璇':'#993C1D','陳佳妤':'#993556','王于心':'#4A6741','王意涵':'#5A4098','張禧恕':'#3A6888','全組':'#888780'};
+const CAT_COLORS={'A':['#EBF2FB','#1E3A5F','#162D4A'],'B':['#EDF7F0','#2A7A6A','#1A5A4A'],'C':['#F0EEFB','#534AB7','#3C3489'],'D':['#E8F5F0','#2A7A6A','#1A5A4A'],'E':['#FBE9E9','#D94F4F','#952020'],'F':['#FDF4E4','#C47D10','#7A4E10'],'G':['#FAECE7','#993C1D','#712B13'],'H':['#EEEDFE','#5A4098','#3A2A78'],'I':['#E5F0E8','#4A6741','#2F4428'],'J':['#F1EFE8','#5F5E5A','#444441'],'K':['#FBF0E8','#8B5A2B','#5A3A18']};
+const CAT_NAMES={'A':'學士班招生','B':'總量業務','C':'碩士班招生','D':'境外生招生','E':'身障甄試','F':'招生專業化計畫','G':'招生宣傳','H':'組內業務','I':'高教深耕計畫','J':'各項行政','K':'經費及財產'};
+const MONTH_NAMES=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+
+/* ════ 狀態 ════ */
+let mainPane='month', qMode='task', qSel=null, todosData=null;
+const nowMonth=new Date().getMonth()+1, nowDay=new Date().getDate();
+const DONE_KEY='ntue_todos_done_v4';
+
+/* ════════════════════════════════════════════════════════
+   本月待辦
+   ════════════════════════════════════════════════════════ */
+function doneSet(){try{return new Set(JSON.parse(localStorage.getItem(DONE_KEY)||'[]'))}catch{return new Set()}}
+function markDone(id){const s=doneSet();s.add(id);localStorage.setItem(DONE_KEY,JSON.stringify([...s]));renderMonth();}
+
+async function fetchTodos(){
+  try{
+    const res = await fetch(TODOS_JSON_URL + '?t=' + Date.now());
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    return await res.json();
+  }catch(e){
+    return {error:`無法讀取 todos.json：${e.message}。請確認 GitHub Actions 已成功執行過至少一次。`};
+  }
+}
+
+async function refreshTodos(){
+  document.getElementById('month-list').innerHTML='<div class="todo-loading">讀取中…</div>';
+  const data=await fetchTodos();
+  if(data.error){
+    document.getElementById('month-list').innerHTML=`<div class="todo-error">⚠ ${data.error}</div>`;
+    return;
+  }
+  todosData=data;
+  document.getElementById('last-updated').textContent=`最後更新：${data.updated_at||'未知'}`;
+  renderMonth();
+}
+
+function renderMonth(){
+  const whoF=document.getElementById('m-filter-who').value;
+  const srcF=document.getElementById('m-filter-src').value;
+  const done=doneSet();
+
+  if(!todosData||!todosData.todos){
+    document.getElementById('month-list').innerHTML='<div class="todo-loading">讀取中…</div>';
+    return;
+  }
+
+  const today=new Date(); today.setHours(0,0,0,0);
+  const dl=(d)=>{const dt=new Date(d+'T00:00:00');return Math.round((dt-today)/(1000*60*60*24));};
+
+  let items=todosData.todos.filter(t=>{
+    if(whoF&&!t.persons.includes(whoF))return false;
+    if(srcF&&t.source!==srcF)return false;
+    return true;
+  }).sort((a,b)=>a.deadline.localeCompare(b.deadline));
+
+  const over=items.filter(t=>!done.has(t.task_id)&&dl(t.deadline)<0);
+  const urg= items.filter(t=>!done.has(t.task_id)&&dl(t.deadline)>=0&&dl(t.deadline)<=3);
+  const wk=  items.filter(t=>!done.has(t.task_id)&&dl(t.deadline)>3&&dl(t.deadline)<=7);
+  const rest= items.filter(t=>!done.has(t.task_id)&&dl(t.deadline)>7);
+  const doneItems=items.filter(t=>done.has(t.task_id));
+
+  const urgLabel=(d)=>{const n=dl(d);if(n<0)return`逾期${Math.abs(n)}天`;if(n===0)return'今天截止';if(n===1)return'明天截止';return`${n}天後截止`;};
+  const urgCls=(d)=>{const n=dl(d);if(n<0)return'urg-o';if(n<=3)return'urg-3';if(n<=7)return'urg-7';return'urg-m';};
+  const fmtDl=(d)=>{const dt=new Date(d+'T00:00:00');return`${dt.getMonth()+1}/${dt.getDate()}`;};
+  const [bg,border,text]=(cat)=>CAT_COLORS[cat]||['#eee','#ccc','#555'];
+
+  const card=(t)=>{
+    const isDone=done.has(t.task_id);
+    const col=PERSON_COLORS[t.persons[0]]||'#888';
+    const [cbg,cbr,ctx]=CAT_COLORS[t.cat]||['#eee','#ccc','#555'];
+    const srcCls=t.source==='email'?'src-email':'src-brochure';
+    const srcLbl=t.source==='email'?'Email':'簡章';
+    return `<div class="todo-card${isDone?' done':''}">
+      <span class="todo-urgency ${isDone?'':''+urgCls(t.deadline)}">${isDone?'✓ 完成':urgLabel(t.deadline)}</span>
+      <span class="cat-badge" style="background:${cbg};border-color:${cbr};color:${ctx};font-size:9px;padding:1px 7px">${t.cat}</span>
+      <div class="todo-main">
+        <div class="todo-title">${t.task_name}</div>
+        <div class="todo-action">${t.action}</div>
+      </div>
+      <div class="todo-right">
+        <span class="todo-dl">${fmtDl(t.deadline)}</span>
+        <span class="todo-src ${srcCls}">${srcLbl}</span>
+        <span class="todo-who" style="background:${col}18;border-color:${col};color:${col}">${t.persons.join('、')}</span>
+        ${!isDone?`<span class="todo-done-btn" onclick="markDone('${t.task_id}')">已完成</span>`:''}
+      </div>
+    </div>`;
+  };
+
+  const section=(label,cls,arr)=>arr.length?
+    `<div class="todo-section"><div class="todo-section-label ${cls}">${label}（${arr.length}）</div>${arr.map(card).join('')}</div>`:'';
+
+  const total=items.length, doneCount=doneItems.length;
+  const html=`
+    <div class="todo-banner">
+      <div>
+        <div class="todo-banner-title">${nowMonth}月　本月待辦清單</div>
+        <div class="todo-banner-meta">共 ${total} 項・已完成 ${doneCount} 項・待處理 ${total-doneCount} 項</div>
+      </div>
+      <div class="todo-banner-right">${new Date().getFullYear()}年${nowMonth}月${nowDay}日</div>
+    </div>
+    ${section('⚠ 逾期','label-overdue',over)}
+    ${section('🔴 3天內截止','label-urgent',urg)}
+    ${section('🟡 本週內（4–7天）','label-week',wk)}
+    ${section('📋 本月其他事項','label-month',rest)}
+    ${doneItems.length?section('✓ 已完成','label-month',doneItems):''}
+    ${!total?'<div class="empty">本月沒有待辦事項</div>':''}
+  `;
+  document.getElementById('month-list').innerHTML=html;
+}
+
+/* ════════════════════════════════════════════════════════
+   業務查詢（純點選，選中後顯示關聯標籤列，無展開面板）
+   ════════════════════════════════════════════════════════ */
+function switchQTab(m){
+  qMode=m;qSel=null;
+  document.getElementById('qtab-task').style.cssText=m==='task'?'background:#1E3A5F;color:#fff;border-color:#1E3A5F':'';
+  document.getElementById('qtab-person').style.cssText=m==='person'?'background:#1E3A5F;color:#fff;border-color:#1E3A5F':'';
+  renderQuery();
+}
+function clearQuery(){qSel=null;document.getElementById('q-search').value='';renderQuery();}
+
+function renderQuery(){
+  const q=document.getElementById('q-search').value.toLowerCase().trim();
+  qMode==='task'?renderQTask(q):renderQPerson(q);
+}
+
+function renderQTask(q){
+  const filtered=TASKS.filter(t=>!q||t.name.toLowerCase().includes(q)||t.persons.join('').includes(q)||CAT_NAMES[t.cat].includes(q));
+  const cats=[...new Set(filtered.map(t=>t.cat))].sort();
+  let html='';
+  cats.forEach(cat=>{
+    const tasks=filtered.filter(t=>t.cat===cat);
+    const [bg,br,tx]=CAT_COLORS[cat]||['#eee','#ccc','#555'];
+    html+=`<div class="cat-header"><span class="cat-badge" style="background:${bg};border-color:${br};color:${tx}">${cat}｜${CAT_NAMES[cat]}</span></div>`;
+    // 如果這個類別有被選中的業務，在這個類別下方插入標籤列
+    const selTask=qSel&&TASKS.find(t=>t.id===qSel);
+    if(selTask&&selTask.cat===cat){
+      const ptags=selTask.persons.map(p=>{
+        const col=PERSON_COLORS[p]||'#888';
+        return `<span class="inline-tag" style="background:${col}18;border-color:${col};color:${col}" onclick="qJumpPerson('${p}')">${p}</span>`;
+      }).join('');
+      html+=`<div class="inline-tags">${ptags}</div>`;
+    }
+    tasks.forEach(t=>{
+      const isSel=qSel===t.id,isDim=qSel&&!isSel;
+      html+=`<div class="chip${isSel?' selected':''}${isDim?' dimmed':''}" onclick="qSelTask('${t.id}')"><span class="chip-name">${t.name}</span></div>`;
+    });
+  });
+  if(!html) html='<div class="empty" style="grid-column:1/-1">找不到符合的業務</div>';
+  document.getElementById('q-grid').innerHTML=html;
+}
+
+function renderQPerson(q){
+  const filtered=PERSONS.filter(p=>!q||p.includes(q)||TASKS.filter(t=>t.persons.includes(p)).some(t=>t.name.includes(q)));
+  let html='';
+  // 選中人員時，在頂部顯示其業務標籤
+  if(qSel){
+    const myTasks=TASKS.filter(t=>t.persons.includes(qSel));
+    const catGroups={};
+    myTasks.forEach(t=>{catGroups[t.cat]=catGroups[t.cat]||[];catGroups[t.cat].push(t);});
+    let tagHtml='';
+    Object.keys(catGroups).sort().forEach(cat=>{
+      const [bg,br,tx]=CAT_COLORS[cat]||['#eee','#ccc','#555'];
+      catGroups[cat].forEach(t=>{
+        tagHtml+=`<span class="inline-tag" style="background:${bg};border-color:${br};color:${tx}" onclick="qJumpTask('${t.id}')">${t.name}</span>`;
+      });
+    });
+    html+=`<div class="inline-tags" style="grid-column:1/-1;margin-bottom:8px">${tagHtml}</div>`;
+  }
+  filtered.forEach(p=>{
+    const count=TASKS.filter(t=>t.persons.includes(p)).length;
+    const isSel=qSel===p,isDim=qSel&&!isSel;
+    const col=PERSON_COLORS[p]||'#888',ini=PERSON_ICONS[p]||p.slice(0,2);
+    html+=`<div class="chip${isSel?' selected':''}${isDim?' dimmed':''}" onclick="qSelPerson('${p}')">
+      <div class="person-chip">
+        <div class="avatar" style="background:${col}22;color:${col}">${ini}</div>
+        <div><div class="chip-name">${p}</div><div class="person-count">${count} 項</div></div>
+      </div></div>`;
+  });
+  if(!filtered.length) html='<div class="empty" style="grid-column:1/-1">找不到符合的人員</div>';
+  document.getElementById('q-grid').innerHTML=html;
+}
+
+function qSelTask(id){qSel=qSel===id?null:id;renderQTask(document.getElementById('q-search').value.toLowerCase().trim());}
+function qSelPerson(p){qSel=qSel===p?null:p;renderQPerson(document.getElementById('q-search').value.toLowerCase().trim());}
+function qJumpPerson(p){qMode='person';qSel=p;switchQTab('person');}
+function qJumpTask(id){qMode='task';qSel=id;switchQTab('task');}
+
+/* ════════════════════════════════════════════════════════
+   年度時程
+   ════════════════════════════════════════════════════════ */
+function renderSchedule(){
+  const q=document.getElementById('s-search').value.toLowerCase().trim();
+  const cat=document.getElementById('s-cat').value;
+  const who=document.getElementById('s-who').value;
+  const items=SCHEDULE.filter(s=>{
+    if(cat&&s.cat!==cat)return false;
+    if(who&&s.who!==who)return false;
+    if(q&&!s.task.toLowerCase().includes(q)&&!s.action.toLowerCase().includes(q)&&!s.who.includes(q))return false;
+    return true;
+  });
+  const byMonth={};
+  items.forEach(s=>{byMonth[s.month]=byMonth[s.month]||[];byMonth[s.month].push(s);});
+  const months=Object.keys(byMonth).map(Number).sort((a,b)=>a-b);
+  let html='';
+  months.forEach(m=>{
+    const isNow=m===nowMonth,mi=byMonth[m];
+    html+=`<div class="month-block"><div class="month-heading">${MONTH_NAMES[m-1]}<span class="badge-count">${mi.length}項</span>${isNow?'<span class="today-mark">本月</span>':''}</div>`;
+    mi.forEach((s,i)=>{
+      const uid=`s-${m}-${i}`;
+      const [bg,br,tx]=CAT_COLORS[s.cat]||['#eee','#ccc','#555'];
+      const col=PERSON_COLORS[s.who]||'#888';
+      const dlB=s.deadline?`<span class="dl-badge">截止</span>`:'';
+      html+=`<div class="sched-item"><div class="sched-header" onclick="toggleS('${uid}')"><span class="sched-arrow" id="sa-${uid}">▶</span><span class="cat-badge" style="background:${bg};border-color:${br};color:${tx};font-size:9px;padding:1px 7px">${s.cat}</span><span class="sched-task">${s.task}</span><span class="sched-action">${s.action.length>36?s.action.slice(0,36)+'…':s.action}${dlB}</span><span class="sched-who" style="background:${col}18;border-color:${col};color:${col}">${s.who}</span></div><div class="sched-body" id="${uid}"><div class="sched-row"><strong>事項</strong>${s.action}</div><div class="sched-row"><strong>文件</strong>${s.doc}</div>${s.note?`<div class="sched-row"><strong>備注</strong>${s.note}</div>`:''}</div></div>`;
+    });
+    html+='</div>';
+  });
+  if(!html) html='<div class="empty">沒有符合條件的時程</div>';
+  document.getElementById('s-list').innerHTML=html;
+}
+function toggleS(uid){
+  const b=document.getElementById(uid),a=document.getElementById('sa-'+uid),h=b.previousElementSibling;
+  const o=b.classList.toggle('open');a.classList.toggle('open',o);h.classList.toggle('open',o);
+}
+
+/* ════════════════════════════════════════════════════════
+   個人待辦
+   ════════════════════════════════════════════════════════ */
+function clearMine(){
+  ['mi-who','mi-month','mi-cat'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('mi-search').value='';
+  document.getElementById('mine-summary').textContent='';
+  document.getElementById('mine-list').innerHTML='<div class="empty">請先選擇人員</div>';
+}
+function hl(txt,q){
+  if(!q)return txt;
+  return txt.replace(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi'),'<mark style="background:#FFF3A3;border-radius:2px;padding:0 1px">$1</mark>');
+}
+function renderMine(){
+  const who=document.getElementById('mi-who').value;
+  const month=parseInt(document.getElementById('mi-month').value)||0;
+  const cat=document.getElementById('mi-cat').value;
+  const q=(document.getElementById('mi-search').value||'').toLowerCase().trim();
+  const sum=document.getElementById('mine-summary');
+  if(!who){document.getElementById('mine-list').innerHTML='<div class="empty">請先選擇人員</div>';sum.textContent='';return;}
+  let items=SCHEDULE.filter(s=>{
+    if(s.who!==who&&!(s.who==='全組'))return false;
+    if(month&&s.month!==month)return false;
+    if(cat&&s.cat!==cat)return false;
+    if(q&&!s.task.toLowerCase().includes(q)&&!s.action.toLowerCase().includes(q)&&!s.doc.toLowerCase().includes(q))return false;
+    return true;
+  });
+  const dlCount=items.filter(s=>s.deadline).length;
+  sum.innerHTML=`共 <strong>${items.length}</strong> 項${dlCount?`，其中 <strong style="color:#D94F4F">${dlCount} 項有截止期限</strong>`:''}`;
+  if(!items.length){document.getElementById('mine-list').innerHTML='<div class="empty">沒有符合條件的事項</div>';return;}
+  const byMonth={};
+  items.forEach(s=>{byMonth[s.month]=byMonth[s.month]||[];byMonth[s.month].push(s);});
+  const months=Object.keys(byMonth).map(Number).sort((a,b)=>a-b);
+  let html='';
+  months.forEach(m=>{
+    const isNow=m===nowMonth,mi=byMonth[m];
+    const mDl=mi.filter(s=>s.deadline).length;
+    html+=`<div class="month-block"><div class="month-heading">${MONTH_NAMES[m-1]}<span class="badge-count">${mi.length}項</span>${isNow?'<span class="today-mark">本月</span>':''}${mDl?`<span style="font-size:10px;color:#D94F4F">${mDl}項截止</span>`:''}</div>`;
+    mi.forEach((s,i)=>{
+      const uid=`mi-${m}-${i}`;
+      const [bg,br,tx]=CAT_COLORS[s.cat]||['#eee','#ccc','#555'];
+      const dlB=s.deadline?`<span class="dl-badge">截止</span>`:'';
+      const open=s.deadline?'open':'';
+      html+=`<div class="sched-item"><div class="sched-header ${open}" onclick="toggleS('${uid}')"><span class="sched-arrow ${open}" id="sa-${uid}">▶</span><span class="cat-badge" style="background:${bg};border-color:${br};color:${tx};font-size:9px;padding:1px 7px">${s.cat}</span><span class="sched-task">${hl(s.task,q)}</span><span class="sched-action">${hl(s.action.length>38?s.action.slice(0,38)+'…':s.action,q)}${dlB}</span></div><div class="sched-body ${open}" id="${uid}"><div class="sched-row"><strong>事項</strong>${hl(s.action,q)}</div><div class="sched-row"><strong>文件</strong>${hl(s.doc,q)}</div>${s.note?`<div class="sched-row"><strong>備注</strong>${s.note}</div>`:''}</div></div>`;
+    });
+    html+='</div>';
+  });
+  document.getElementById('mine-list').innerHTML=html;
+}
+
+/* ════ switchMain ════ */
+function switchMain(p){
+  mainPane=p;
+  ['month','query','schedule','mine'].forEach(x=>{document.getElementById('pane-'+x).style.display=x===p?'':'none';});
+  document.querySelectorAll('.main-tab').forEach((el,i)=>{el.className='main-tab'+(['month','query','schedule','mine'][i]===p?' active':'');});
+  if(p==='schedule')renderSchedule();
+  if(p==='mine')renderMine();
+}
+
+/* ════ init ════ */
+function init(){
+  // 年度時程下拉
+  const sCat=document.getElementById('s-cat'),sWho=document.getElementById('s-who');
+  Object.keys(CAT_NAMES).sort().forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=`${k}｜${CAT_NAMES[k]}`;sCat.appendChild(o);});
+  PERSONS.forEach(p=>{const o=document.createElement('option');o.value=p;o.textContent=p;sWho.appendChild(o);});
+  // 個人待辦下拉
+  const miWho=document.getElementById('mi-who'),miMonth=document.getElementById('mi-month'),miCat=document.getElementById('mi-cat');
+  PERSONS.forEach(p=>{const o=document.createElement('option');o.value=p;o.textContent=p;miWho.appendChild(o);});
+  MONTH_NAMES.forEach((mn,i)=>{const o=document.createElement('option');o.value=i+1;o.textContent=mn+(i+1===nowMonth?' （本月）':'');miMonth.appendChild(o);});
+  Object.keys(CAT_NAMES).sort().forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=`${k}｜${CAT_NAMES[k]}`;miCat.appendChild(o);});
+  document.getElementById('mine-list').innerHTML='<div class="empty">請先選擇人員</div>';
+  // 本月待辦下拉
+  const mfWho=document.getElementById('m-filter-who');
+  PERSONS.forEach(p=>{const o=document.createElement('option');o.value=p;o.textContent=p;mfWho.appendChild(o);});
+  // 業務查詢
+  renderQuery();
+  // 讀取待辦
+  refreshTodos();
+}
+init();
+</script>
+</body>
+</html>
