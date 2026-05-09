@@ -1,20 +1,7 @@
 {
-  "updated_at": "2026-05-08 14:19",
+  "updated_at": "2026-05-09 15:23",
   "month": 5,
   "todos": [
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生與宣傳組無修正，謝謝！ 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 202",
-      "deadline": "2026-05-06",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t45",
       "task_name": "年度校務基金預算書與績效報告",
@@ -36,6 +23,19 @@
       "persons": [
         "趙沛滋",
         "劉玉萍"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生與宣傳組無修正，謝謝！ 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 202",
+      "deadline": "2026-05-11",
+      "persons": [
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -80,19 +80,6 @@
   ],
   "schedule": [
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生與宣傳組無修正，謝謝！ 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 202",
-      "deadline": "2026-05-06",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t45",
       "task_name": "年度校務基金預算書與績效報告",
       "cat": "K",
@@ -113,6 +100,19 @@
       "persons": [
         "趙沛滋",
         "劉玉萍"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生與宣傳組無修正，謝謝！ 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 202",
+      "deadline": "2026-05-11",
+      "persons": [
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
