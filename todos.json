@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-16 15:32",
+  "updated_at": "2026-05-17 16:34",
   "month": 5,
   "todos": [
     {
@@ -32,19 +32,6 @@
       "cat": "J",
       "action": "溶玲姐好 招生與宣傳組資料如附，請查收，謝謝。 --------------------------------------- 國立臺北教育大學教務處招生與宣傳",
       "deadline": "2026-05-13",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生與宣傳組無修正，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
-      "deadline": "2026-05-14",
       "persons": [
         "劉育志",
         "張禧恕"
@@ -92,7 +79,7 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "各位主管及同仁好， 有關本校「113年度上半年第三週期大學校院校務評鑑」實地訪評報告所列待改善事項、建議事項之改善情形，經提115年5月11日主管會報討論，決議",
+      "action": "招生與宣傳組無修正，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
       "deadline": "2026-05-19",
       "persons": [
         "劉育志",
@@ -121,6 +108,19 @@
       "deadline": "2026-05-20",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好： 114學年度第2學期第2次教務會議 謹訂於5月20日(星期三)上午9點30分於行政大樓6樓605會議室召開， 教務宣導工作報告 ,請於5月13日中午前",
+      "deadline": "2026-05-20",
+      "persons": [
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -189,19 +189,6 @@
       "done": false
     },
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生與宣傳組無修正，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
-      "deadline": "2026-05-14",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t02",
       "task_name": "申請入學",
       "cat": "A",
@@ -241,7 +228,7 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "各位主管及同仁好， 有關本校「113年度上半年第三週期大學校院校務評鑑」實地訪評報告所列待改善事項、建議事項之改善情形，經提115年5月11日主管會報討論，決議",
+      "action": "招生與宣傳組無修正，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
       "deadline": "2026-05-19",
       "persons": [
         "劉育志",
@@ -270,6 +257,19 @@
       "deadline": "2026-05-20",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好： 114學年度第2學期第2次教務會議 謹訂於5月20日(星期三)上午9點30分於行政大樓6樓605會議室召開， 教務宣導工作報告 ,請於5月13日中午前",
+      "deadline": "2026-05-20",
+      "persons": [
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
