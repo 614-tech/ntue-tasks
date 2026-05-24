@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23 15:59",
+  "updated_at": "2026-05-24 17:09",
   "month": 5,
   "todos": [
     {
@@ -71,6 +71,18 @@
       "deadline": "2026-05-22",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t02",
+      "task_name": "申請入學",
+      "cat": "A",
+      "action": "委員您好： 非常抱歉。 [重要][本信請5/2517:00前回覆]有關115學年度招生委員會第18次委員會議 時間：115年5月27日（星期三）下午15時30分",
+      "deadline": "2026-05-25",
+      "persons": [
+        "余艾璇"
       ],
       "source": "email",
       "done": false
@@ -171,6 +183,18 @@
       "deadline": "2026-05-22",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t02",
+      "task_name": "申請入學",
+      "cat": "A",
+      "action": "委員您好： 非常抱歉。 [重要][本信請5/2517:00前回覆]有關115學年度招生委員會第18次委員會議 時間：115年5月27日（星期三）下午15時30分",
+      "deadline": "2026-05-25",
+      "persons": [
+        "余艾璇"
       ],
       "source": "email",
       "done": false
