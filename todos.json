@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27 10:39",
+  "updated_at": "2026-06-28 10:54",
   "month": 6,
   "todos": [
     {
@@ -10,18 +10,6 @@
       "deadline": "2026-06-22",
       "persons": [
         "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t09",
-      "task_name": "四技二專特殊選才",
-      "cat": "A",
-      "action": "[通知] 您有新待辦公文1150017073，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-06-23",
-      "persons": [
-        "余艾璇"
       ],
       "source": "email",
       "done": false
@@ -70,6 +58,18 @@
       "deadline": "2026-06-29",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t09",
+      "task_name": "四技二專特殊選才",
+      "cat": "A",
+      "action": "[通知] 您有新待辦公文1150017073，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-07-01",
+      "persons": [
+        "余艾璇"
       ],
       "source": "email",
       "done": false
@@ -89,18 +89,6 @@
       "done": false
     },
     {
-      "task_id": "t09",
-      "task_name": "四技二專特殊選才",
-      "cat": "A",
-      "action": "[通知] 您有新待辦公文1150017073，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-06-23",
-      "persons": [
-        "余艾璇"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "email_misc",
       "task_name": "Re: (6/24前回覆)敬請各單位修訂",
       "cat": "J",
@@ -144,6 +132,18 @@
       "deadline": "2026-06-29",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t09",
+      "task_name": "四技二專特殊選才",
+      "cat": "A",
+      "action": "[通知] 您有新待辦公文1150017073，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-07-01",
+      "persons": [
+        "余艾璇"
       ],
       "source": "email",
       "done": false
