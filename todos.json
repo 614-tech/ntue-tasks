@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06 10:38",
+  "updated_at": "2026-07-07 10:34",
   "month": 7,
   "todos": [
     {
@@ -16,6 +16,18 @@
       "done": false
     },
     {
+      "task_id": "email_misc",
+      "task_name": "(7月16日前回覆)115年環管評鑑資料",
+      "cat": "J",
+      "action": "大家好， 請相關單位 ( 招生與宣傳組、註冊組、課務組、華語文中心 ) 填寫 115年大專校院校園環境管理現況調查與執行成效檢核實施計畫-自我檢核表 實施計畫請",
+      "deadline": "2026-07-16",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t45",
       "task_name": "年度校務基金預算書與績效報告",
       "cat": "K",
@@ -23,6 +35,18 @@
       "deadline": "2026-07-20",
       "persons": [
         "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "(7月23日前回覆)115年第2次敘獎作",
+      "cat": "J",
+      "action": "大家好謹通知本校職員115年第2次敘獎作業，倘有提案，請於115年7月23日（四）前將附件1「獎懲建議表」電子檔先行回覆教務長室(請先免印紙本) 說明： 一、查",
+      "deadline": "2026-07-23",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -43,6 +67,18 @@
       "done": false
     },
     {
+      "task_id": "email_misc",
+      "task_name": "(7月16日前回覆)115年環管評鑑資料",
+      "cat": "J",
+      "action": "大家好， 請相關單位 ( 招生與宣傳組、註冊組、課務組、華語文中心 ) 填寫 115年大專校院校園環境管理現況調查與執行成效檢核實施計畫-自我檢核表 實施計畫請",
+      "deadline": "2026-07-16",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t45",
       "task_name": "年度校務基金預算書與績效報告",
       "cat": "K",
@@ -50,6 +86,18 @@
       "deadline": "2026-07-20",
       "persons": [
         "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "(7月23日前回覆)115年第2次敘獎作",
+      "cat": "J",
+      "action": "大家好謹通知本校職員115年第2次敘獎作業，倘有提案，請於115年7月23日（四）前將附件1「獎懲建議表」電子檔先行回覆教務長室(請先免印紙本) 說明： 一、查",
+      "deadline": "2026-07-23",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
