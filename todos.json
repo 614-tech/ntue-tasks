@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-16 10:04",
+  "updated_at": "2026-07-17 10:07",
   "month": 7,
   "todos": [
     {
       "task_id": "email_misc",
-      "task_name": "Re: (7月23日前回覆)115年第2",
+      "task_name": "Re: (7月15日前回覆)編修115學",
       "cat": "J",
-      "action": "您好： 本組提案及佐證資料如附，請查收，謝謝 案1佐證資料.zip 案2佐證資料.zip 教務處Office of Academic Affairs &lt;s",
+      "action": "抱歉遲交了 招生組修正處如P.41黃底紅字處 請查收 謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.",
       "deadline": "2026-07-15",
       "persons": [
         "劉育志"
@@ -33,18 +33,6 @@
       "cat": "J",
       "action": "有關本組確認壹-4.學院/學群名稱部分，查本校組織章程，學位學程沒有「不分學院」這四個字，建議依據組織章程名稱修正。 其餘學院名稱經確認無須修正，表格回復如附檔",
       "deadline": "2026-07-16",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150017799，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-07-22",
       "persons": [
         "劉育志"
       ],
@@ -80,9 +68,9 @@
   "schedule": [
     {
       "task_id": "email_misc",
-      "task_name": "Re: (7月23日前回覆)115年第2",
+      "task_name": "Re: (7月15日前回覆)編修115學",
       "cat": "J",
-      "action": "您好： 本組提案及佐證資料如附，請查收，謝謝 案1佐證資料.zip 案2佐證資料.zip 教務處Office of Academic Affairs &lt;s",
+      "action": "抱歉遲交了 招生組修正處如P.41黃底紅字處 請查收 謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.",
       "deadline": "2026-07-15",
       "persons": [
         "劉育志"
@@ -109,18 +97,6 @@
       "cat": "J",
       "action": "有關本組確認壹-4.學院/學群名稱部分，查本校組織章程，學位學程沒有「不分學院」這四個字，建議依據組織章程名稱修正。 其餘學院名稱經確認無須修正，表格回復如附檔",
       "deadline": "2026-07-16",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150017799，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-07-22",
       "persons": [
         "劉育志"
       ],
