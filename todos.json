@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-07-21 10:06",
+  "updated_at": "2026-07-22 10:04",
   "month": 7,
   "todos": [
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150120180，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-07-07",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
     {
       "task_id": "email_misc",
       "task_name": "Re: (7月15日前回覆)編修115學",
@@ -35,6 +47,31 @@
       "deadline": "2026-07-16",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t17",
+      "task_name": "身障甄試試務（北四區）",
+      "cat": "E",
+      "action": "[通知] 您有新待辦公文1150018100，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-07-20",
+      "persons": [
+        "趙沛滋",
+        "劉玉萍"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t05",
+      "task_name": "暑假轉學考",
+      "cat": "A",
+      "action": "[通知] 您有新待辦公文1150018095，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-07-20",
+      "persons": [
+        "趙沛滋"
       ],
       "source": "email",
       "done": false
@@ -68,6 +105,18 @@
   "schedule": [
     {
       "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150120180，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-07-07",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
       "task_name": "Re: (7月15日前回覆)編修115學",
       "cat": "J",
       "action": "抱歉遲交了 招生組修正處如P.41黃底紅字處 請查收 謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.",
@@ -99,6 +148,31 @@
       "deadline": "2026-07-16",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t17",
+      "task_name": "身障甄試試務（北四區）",
+      "cat": "E",
+      "action": "[通知] 您有新待辦公文1150018100，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-07-20",
+      "persons": [
+        "趙沛滋",
+        "劉玉萍"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t05",
+      "task_name": "暑假轉學考",
+      "cat": "A",
+      "action": "[通知] 您有新待辦公文1150018095，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-07-20",
+      "persons": [
+        "趙沛滋"
       ],
       "source": "email",
       "done": false
