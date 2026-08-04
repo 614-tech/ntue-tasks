@@ -1,6 +1,32 @@
 {
-  "updated_at": "2026-08-03 10:12",
+  "updated_at": "2026-08-04 09:58",
   "month": 8,
-  "todos": [],
-  "schedule": []
+  "todos": [
+    {
+      "task_id": "email_misc",
+      "task_name": "Re: (8月20日前回覆)116年財務",
+      "cat": "J",
+      "action": "您好： 招生組修正45-48頁黃底紅字，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu",
+      "deadline": "2026-08-03",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    }
+  ],
+  "schedule": [
+    {
+      "task_id": "email_misc",
+      "task_name": "Re: (8月20日前回覆)116年財務",
+      "cat": "J",
+      "action": "您好： 招生組修正45-48頁黃底紅字，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu",
+      "deadline": "2026-08-03",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    }
+  ]
 }
