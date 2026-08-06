@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05 09:57",
+  "updated_at": "2026-08-06 10:01",
   "month": 8,
   "todos": [
     {
@@ -10,6 +10,56 @@
       "deadline": "2026-08-03",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150120199，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-08-04",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "禕恕、于心： 本次行政會議我有提案，修正招生委員會設置辦法。我把教育部核定本跟提案、工作報告、行事曆一起給你們，如果有需要修正的地方再麻煩，謝謝！ ------",
+      "deadline": "2026-08-05",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "轉知活動訊息2則消息",
+      "cat": "J",
+      "action": "轉知報名訊息2則: 1.國立中山大學 115學年度第1學期碩士、學士學分專班（隨班附讀）將於115年8月10日截止收件。 2.社團法人中華民國全國中小企業總會",
+      "deadline": "2026-08-10",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好， 敬送本校115.7.29第249次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
+      "deadline": "2026-08-12",
+      "persons": [
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -24,6 +74,56 @@
       "deadline": "2026-08-03",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150120199，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-08-04",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "禕恕、于心： 本次行政會議我有提案，修正招生委員會設置辦法。我把教育部核定本跟提案、工作報告、行事曆一起給你們，如果有需要修正的地方再麻煩，謝謝！ ------",
+      "deadline": "2026-08-05",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "轉知活動訊息2則消息",
+      "cat": "J",
+      "action": "轉知報名訊息2則: 1.國立中山大學 115學年度第1學期碩士、學士學分專班（隨班附讀）將於115年8月10日截止收件。 2.社團法人中華民國全國中小企業總會",
+      "deadline": "2026-08-10",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好， 敬送本校115.7.29第249次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
+      "deadline": "2026-08-12",
+      "persons": [
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
