@@ -1,19 +1,7 @@
 {
-  "updated_at": "2026-08-10 09:16",
+  "updated_at": "2026-08-11 09:14",
   "month": 8,
   "todos": [
-    {
-      "task_id": "email_misc",
-      "task_name": "Re: (8月20日前回覆)116年財務",
-      "cat": "J",
-      "action": "您好： 招生組修正45-48頁黃底紅字，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu",
-      "deadline": "2026-08-03",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "email_misc",
       "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
@@ -40,12 +28,24 @@
     },
     {
       "task_id": "email_misc",
-      "task_name": "轉知活動訊息2則消息",
+      "task_name": "轉知活動訊息2則訊息如下",
       "cat": "J",
-      "action": "轉知報名訊息2則: 1.國立中山大學 115學年度第1學期碩士、學士學分專班（隨班附讀）將於115年8月10日截止收件。 2.社團法人中華民國全國中小企業總會",
+      "action": "轉知報名訊息2則: 1.國立中山大學 115學年度第1學期碩士、學士學分專班（隨班附讀）將於115年8月10日截止收件。 2.國立中山大學 外國語文教學中心「2",
       "deadline": "2026-08-10",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t11",
+      "task_name": "院系所增設調整及招生總量提報",
+      "cat": "B",
+      "action": "[通知] 您有新待辦公文1150120215，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-08-10",
+      "persons": [
+        "王于心"
       ],
       "source": "email",
       "done": false
@@ -71,6 +71,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "【公告】本校第3屆第8次勞資會議提案通知",
+      "cat": "J",
+      "action": "主旨：本校第3屆第8次勞資會議提案通知。 說明：本校第3屆第8次勞資會議訂於115年9月16日(星期三)15時召開。各單位適用勞動基準法同仁若有提案，請依附表格",
+      "deadline": "2026-08-20",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -79,18 +91,6 @@
   "schedule": [
     {
       "task_id": "email_misc",
-      "task_name": "Re: (8月20日前回覆)116年財務",
-      "cat": "J",
-      "action": "您好： 招生組修正45-48頁黃底紅字，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu",
-      "deadline": "2026-08-03",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
       "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
       "cat": "J",
       "action": "[通知] 您有新待辦公文1150120199，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
@@ -115,12 +115,24 @@
     },
     {
       "task_id": "email_misc",
-      "task_name": "轉知活動訊息2則消息",
+      "task_name": "轉知活動訊息2則訊息如下",
       "cat": "J",
-      "action": "轉知報名訊息2則: 1.國立中山大學 115學年度第1學期碩士、學士學分專班（隨班附讀）將於115年8月10日截止收件。 2.社團法人中華民國全國中小企業總會",
+      "action": "轉知報名訊息2則: 1.國立中山大學 115學年度第1學期碩士、學士學分專班（隨班附讀）將於115年8月10日截止收件。 2.國立中山大學 外國語文教學中心「2",
       "deadline": "2026-08-10",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t11",
+      "task_name": "院系所增設調整及招生總量提報",
+      "cat": "B",
+      "action": "[通知] 您有新待辦公文1150120215，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-08-10",
+      "persons": [
+        "王于心"
       ],
       "source": "email",
       "done": false
@@ -146,6 +158,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "【公告】本校第3屆第8次勞資會議提案通知",
+      "cat": "J",
+      "action": "主旨：本校第3屆第8次勞資會議提案通知。 說明：本校第3屆第8次勞資會議訂於115年9月16日(星期三)15時召開。各單位適用勞動基準法同仁若有提案，請依附表格",
+      "deadline": "2026-08-20",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
