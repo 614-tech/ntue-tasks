@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24 08:56",
+  "updated_at": "2026-08-25 08:56",
   "month": 8,
   "todos": [
     {
@@ -10,18 +10,6 @@
       "deadline": "2026-08-12",
       "persons": [
         "劉玉萍"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "Re: 請協助於8月17日前回覆居留證效",
-      "cat": "J",
-      "action": "老師，我的居留證已經過期了 教務處招生與宣傳組-劉玉萍 &lt;clair@mail.ntue.edu.tw&gt;于2026年8月13日 周四下午1:27写道",
-      "deadline": "2026-08-17",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -98,6 +86,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "Re: 請協助於8月17日前回覆居留證效",
+      "cat": "J",
+      "action": "老師，我的居留證已經過期了 教務處招生與宣傳組-劉玉萍 &lt;clair@mail.ntue.edu.tw&gt;于2026年8月13日 周四下午1:27写道",
+      "deadline": "2026-09-14",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -117,18 +117,6 @@
       "done": false
     },
     {
-      "task_id": "email_misc",
-      "task_name": "Re: 請協助於8月17日前回覆居留證效",
-      "cat": "J",
-      "action": "老師，我的居留證已經過期了 教務處招生與宣傳組-劉玉萍 &lt;clair@mail.ntue.edu.tw&gt;于2026年8月13日 周四下午1:27写道",
-      "deadline": "2026-08-17",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t17",
       "task_name": "身障甄試試務（北四區）",
       "cat": "E",
@@ -200,6 +188,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "Re: 請協助於8月17日前回覆居留證效",
+      "cat": "J",
+      "action": "老師，我的居留證已經過期了 教務處招生與宣傳組-劉玉萍 &lt;clair@mail.ntue.edu.tw&gt;于2026年8月13日 周四下午1:27写道",
+      "deadline": "2026-09-14",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
