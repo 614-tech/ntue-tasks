@@ -1,37 +1,13 @@
 {
-  "updated_at": "2026-08-31 10:59",
-  "month": 8,
+  "updated_at": "2026-09-01 11:06",
+  "month": 9,
   "todos": [
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150018096，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-07-29",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019314，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-25",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019528，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-28",
+      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
+      "deadline": "2026-08-31",
       "persons": [
         "劉育志",
         "張禧恕"
@@ -40,40 +16,14 @@
       "done": false
     },
     {
-      "task_id": "t18",
-      "task_name": "招生專業化計畫",
-      "cat": "F",
-      "action": "[通知] 您有新待辦公文1150019533，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-28",
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "---------- Forwarded message --------- 寄件者： 教務處招生組-劉育志 &lt;lyc614@mail.ntue.edu.",
+      "deadline": "2026-09-01",
       "persons": [
         "劉育志",
-        "高佳嵐",
-        "張禧恕",
-        "王意涵"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "[通知] 您有新待辦公文1150120234，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-28",
-      "persons": [
-        "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t14",
-      "task_name": "外國學生招生",
-      "cat": "D",
-      "action": "[通知] 您有新待辦公文1150120222，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-28",
-      "persons": [
-        "劉玉萍"
+        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -82,7 +32,20 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "敬祝 平安順心 張溶玲 敬上 ============================================ 國立臺北教育大學教務處教務長室 Tel：",
+      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
+      "deadline": "2026-09-02",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
       "deadline": "2026-09-09",
       "persons": [
         "劉育志",
@@ -94,35 +57,11 @@
   ],
   "schedule": [
     {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150018096，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-07-29",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019314，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-25",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019528，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-28",
+      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
+      "deadline": "2026-08-31",
       "persons": [
         "劉育志",
         "張禧恕"
@@ -131,40 +70,14 @@
       "done": false
     },
     {
-      "task_id": "t18",
-      "task_name": "招生專業化計畫",
-      "cat": "F",
-      "action": "[通知] 您有新待辦公文1150019533，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-28",
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "---------- Forwarded message --------- 寄件者： 教務處招生組-劉育志 &lt;lyc614@mail.ntue.edu.",
+      "deadline": "2026-09-01",
       "persons": [
         "劉育志",
-        "高佳嵐",
-        "張禧恕",
-        "王意涵"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "[通知] 您有新待辦公文1150120234，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-28",
-      "persons": [
-        "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t14",
-      "task_name": "外國學生招生",
-      "cat": "D",
-      "action": "[通知] 您有新待辦公文1150120222，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-08-28",
-      "persons": [
-        "劉玉萍"
+        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -173,7 +86,20 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "敬祝 平安順心 張溶玲 敬上 ============================================ 國立臺北教育大學教務處教務長室 Tel：",
+      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
+      "deadline": "2026-09-02",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
       "deadline": "2026-09-09",
       "persons": [
         "劉育志",
