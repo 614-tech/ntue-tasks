@@ -1,19 +1,7 @@
 {
-  "updated_at": "2026-09-02 10:26",
+  "updated_at": "2026-09-03 10:33",
   "month": 9,
   "todos": [
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019584，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 11",
-      "deadline": "2026-08-31",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t40",
       "task_name": "各類工作報告",
@@ -23,6 +11,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150019675，請至公文線上簽核系統入口網辦理 承辦單位：進修教育中心 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-01",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -41,18 +41,6 @@
       "done": false
     },
     {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019683，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-02",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
@@ -66,11 +54,36 @@
       "done": false
     },
     {
+      "task_id": "email_misc",
+      "task_name": "重要~(9月9日前回覆教務長室)公務人員",
+      "cat": "J",
+      "action": "大家好 人事室辦理公務人員115年第2季平時考核(紙本考核表另送各單位主任/組長)， 請公務員同仁及二級主管依附檔範例填寫/考評 附檔1- 一般人員 (含組長考",
+      "deadline": "2026-09-09",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
       "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
       "deadline": "2026-09-09",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好， 敬送本校115.8.26第250次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
+      "deadline": "2026-09-15",
       "persons": [
         "劉育志",
         "張禧恕"
@@ -81,18 +94,6 @@
   ],
   "schedule": [
     {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019584，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 11",
-      "deadline": "2026-08-31",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
@@ -101,6 +102,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150019675，請至公文線上簽核系統入口網辦理 承辦單位：進修教育中心 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-01",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -119,18 +132,6 @@
       "done": false
     },
     {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019683，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-02",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
@@ -144,11 +145,36 @@
       "done": false
     },
     {
+      "task_id": "email_misc",
+      "task_name": "重要~(9月9日前回覆教務長室)公務人員",
+      "cat": "J",
+      "action": "大家好 人事室辦理公務人員115年第2季平時考核(紙本考核表另送各單位主任/組長)， 請公務員同仁及二級主管依附檔範例填寫/考評 附檔1- 一般人員 (含組長考",
+      "deadline": "2026-09-09",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
       "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
       "deadline": "2026-09-09",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好， 敬送本校115.8.26第250次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
+      "deadline": "2026-09-15",
       "persons": [
         "劉育志",
         "張禧恕"
