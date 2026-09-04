@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03 10:33",
+  "updated_at": "2026-09-04 10:29",
   "month": 9,
   "todos": [
     {
@@ -11,18 +11,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019675，請至公文線上簽核系統入口網辦理 承辦單位：進修教育中心 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-01",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -74,6 +62,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "【大學問講座簡報資料】2026年9月​「",
+      "cat": "J",
+      "action": "敬愛的師長您好： 感謝您參與 2026年9月「大學會員線上講堂」116招生趨勢：國內生源雪崩下的招生策略 ， 提供會議簡報資料供您參考。 1.下載連結：http",
+      "deadline": "2026-09-11",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -107,18 +107,6 @@
       "done": false
     },
     {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150019675，請至公文線上簽核系統入口網辦理 承辦單位：進修教育中心 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-01",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
@@ -165,6 +153,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "【大學問講座簡報資料】2026年9月​「",
+      "cat": "J",
+      "action": "敬愛的師長您好： 感謝您參與 2026年9月「大學會員線上講堂」116招生趨勢：國內生源雪崩下的招生策略 ， 提供會議簡報資料供您參考。 1.下載連結：http",
+      "deadline": "2026-09-11",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
