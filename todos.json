@@ -1,20 +1,7 @@
 {
-  "updated_at": "2026-09-07 10:24",
+  "updated_at": "2026-09-08 10:37",
   "month": 9,
   "todos": [
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
-      "deadline": "2026-08-31",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t40",
       "task_name": "各類工作報告",
@@ -37,21 +24,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t18",
-      "task_name": "招生專業化計畫",
-      "cat": "F",
-      "action": "[通知] 您有新待辦公文1150120243，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-04",
-      "persons": [
-        "劉育志",
-        "高佳嵐",
-        "張禧恕",
-        "王意涵"
       ],
       "source": "email",
       "done": false
@@ -82,6 +54,33 @@
       "done": false
     },
     {
+      "task_id": "t01",
+      "task_name": "特殊選才",
+      "cat": "A",
+      "action": "各位助教好： 如去年度高教司之調查須進行個案蒐集，請各學系提供特殊選才學生個案說明。 請各位助教如附件中所述提供學生之個案說明111學年及115學年各1位學生",
+      "deadline": "2026-09-11",
+      "persons": [
+        "劉玉萍"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t18",
+      "task_name": "招生專業化計畫",
+      "cat": "F",
+      "action": "[通知] 您有新待辦公文1150120243，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-11",
+      "persons": [
+        "劉育志",
+        "高佳嵐",
+        "張禧恕",
+        "王意涵"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "email_misc",
       "task_name": "【大學問講座簡報資料】2026年9月​「",
       "cat": "J",
@@ -99,6 +98,19 @@
       "cat": "J",
       "action": "大家好， 敬送本校115.8.26第250次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
       "deadline": "2026-09-15",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
+      "deadline": "2026-09-22",
       "persons": [
         "劉育志",
         "張禧恕"
@@ -112,19 +124,6 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
-      "deadline": "2026-08-31",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
       "action": "---------- Forwarded message --------- 寄件者： 教務處招生組-劉育志 &lt;lyc614@mail.ntue.edu.",
       "deadline": "2026-09-01",
       "persons": [
@@ -143,21 +142,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t18",
-      "task_name": "招生專業化計畫",
-      "cat": "F",
-      "action": "[通知] 您有新待辦公文1150120243，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-04",
-      "persons": [
-        "劉育志",
-        "高佳嵐",
-        "張禧恕",
-        "王意涵"
       ],
       "source": "email",
       "done": false
@@ -188,6 +172,33 @@
       "done": false
     },
     {
+      "task_id": "t01",
+      "task_name": "特殊選才",
+      "cat": "A",
+      "action": "各位助教好： 如去年度高教司之調查須進行個案蒐集，請各學系提供特殊選才學生個案說明。 請各位助教如附件中所述提供學生之個案說明111學年及115學年各1位學生",
+      "deadline": "2026-09-11",
+      "persons": [
+        "劉玉萍"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t18",
+      "task_name": "招生專業化計畫",
+      "cat": "F",
+      "action": "[通知] 您有新待辦公文1150120243，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-11",
+      "persons": [
+        "劉育志",
+        "高佳嵐",
+        "張禧恕",
+        "王意涵"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "email_misc",
       "task_name": "【大學問講座簡報資料】2026年9月​「",
       "cat": "J",
@@ -205,6 +216,19 @@
       "cat": "J",
       "action": "大家好， 敬送本校115.8.26第250次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
       "deadline": "2026-09-15",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
+      "deadline": "2026-09-22",
       "persons": [
         "劉育志",
         "張禧恕"
