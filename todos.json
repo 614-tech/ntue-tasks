@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09 10:37",
+  "updated_at": "2026-09-10 10:40",
   "month": 9,
   "todos": [
     {
@@ -24,18 +24,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t04",
-      "task_name": "分發入學",
-      "cat": "A",
-      "action": "[通知] 您有新待辦公文1150019979，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-08",
-      "persons": [
-        "余艾璇"
       ],
       "source": "email",
       "done": false
@@ -73,6 +61,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150120251，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-10",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -138,18 +138,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "【競賽】告別實習鴨力，準備劃位登場！20",
-      "cat": "J",
-      "action": "📢 各位「職鴨」旅客請注意！職場經歷不白費，成果亮出來還能拿獎金！ 將你的實習經歷化為海報與影片，只要完成報名並通過審核配合展出，每隊即可獲得 1000 元參展",
-      "deadline": "2026-09-30",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -195,18 +183,6 @@
       "done": false
     },
     {
-      "task_id": "t04",
-      "task_name": "分發入學",
-      "cat": "A",
-      "action": "[通知] 您有新待辦公文1150019979，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-08",
-      "persons": [
-        "余艾璇"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t15",
       "task_name": "僑港澳招生",
       "cat": "D",
@@ -239,6 +215,18 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150120251，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-10",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -304,18 +292,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "【競賽】告別實習鴨力，準備劃位登場！20",
-      "cat": "J",
-      "action": "📢 各位「職鴨」旅客請注意！職場經歷不白費，成果亮出來還能拿獎金！ 將你的實習經歷化為海報與影片，只要完成報名並通過審核配合展出，每隊即可獲得 1000 元參展",
-      "deadline": "2026-09-30",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
