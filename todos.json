@@ -1,45 +1,7 @@
 {
-  "updated_at": "2026-09-10 10:40",
+  "updated_at": "2026-09-11 10:33",
   "month": 9,
   "todos": [
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "---------- Forwarded message --------- 寄件者： 教務處招生組-劉育志 &lt;lyc614@mail.ntue.edu.",
-      "deadline": "2026-09-01",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
-      "deadline": "2026-09-02",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t15",
-      "task_name": "僑港澳招生",
-      "cat": "D",
-      "action": "各位助教您好： 9月11日即將開放「2027年外國學生」及「116學年度單獨招收僑生及港澳生」申請入學報名。 ※登入系統流程說明:校首頁→校園入口網登入後→右上",
-      "deadline": "2026-09-09",
-      "persons": [
-        "劉玉萍"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "email_misc",
       "task_name": "重要~(9月9日前回覆教務長室)公務人員",
@@ -53,26 +15,25 @@
       "done": false
     },
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
       "cat": "J",
-      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
-      "deadline": "2026-09-09",
+      "action": "[通知] 您有新待辦公文1150120254，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-10",
       "persons": [
-        "劉育志",
-        "張禧恕"
+        "劉育志"
       ],
       "source": "email",
       "done": false
     },
     {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150120251，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-10",
+      "task_id": "t15",
+      "task_name": "僑港澳招生",
+      "cat": "D",
+      "action": "各位助教您好： 9月11日即將開放「2027年外國學生」及「116學年度單獨招收僑生及港澳生」申請入學報名。 ※登入系統流程說明:校首頁→校園入口網登入後→右上",
+      "deadline": "2026-09-11",
       "persons": [
-        "劉育志"
+        "劉玉萍"
       ],
       "source": "email",
       "done": false
@@ -122,19 +83,6 @@
       "cat": "J",
       "action": "大家好， 敬送本校115.8.26第250次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
       "deadline": "2026-09-15",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
-      "deadline": "2026-09-22",
       "persons": [
         "劉育志",
         "張禧恕"
@@ -157,44 +105,6 @@
   ],
   "schedule": [
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "---------- Forwarded message --------- 寄件者： 教務處招生組-劉育志 &lt;lyc614@mail.ntue.edu.",
-      "deadline": "2026-09-01",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
-      "deadline": "2026-09-02",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t15",
-      "task_name": "僑港澳招生",
-      "cat": "D",
-      "action": "各位助教您好： 9月11日即將開放「2027年外國學生」及「116學年度單獨招收僑生及港澳生」申請入學報名。 ※登入系統流程說明:校首頁→校園入口網登入後→右上",
-      "deadline": "2026-09-09",
-      "persons": [
-        "劉玉萍"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "email_misc",
       "task_name": "重要~(9月9日前回覆教務長室)公務人員",
       "cat": "J",
@@ -207,26 +117,25 @@
       "done": false
     },
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
       "cat": "J",
-      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
-      "deadline": "2026-09-09",
+      "action": "[通知] 您有新待辦公文1150120254，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-10",
       "persons": [
-        "劉育志",
-        "張禧恕"
+        "劉育志"
       ],
       "source": "email",
       "done": false
     },
     {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150120251，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-10",
+      "task_id": "t15",
+      "task_name": "僑港澳招生",
+      "cat": "D",
+      "action": "各位助教您好： 9月11日即將開放「2027年外國學生」及「116學年度單獨招收僑生及港澳生」申請入學報名。 ※登入系統流程說明:校首頁→校園入口網登入後→右上",
+      "deadline": "2026-09-11",
       "persons": [
-        "劉育志"
+        "劉玉萍"
       ],
       "source": "email",
       "done": false
@@ -276,19 +185,6 @@
       "cat": "J",
       "action": "大家好， 敬送本校115.8.26第250次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
       "deadline": "2026-09-15",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
-      "deadline": "2026-09-22",
       "persons": [
         "劉育志",
         "張禧恕"
