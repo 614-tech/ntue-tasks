@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-14 10:55",
+  "updated_at": "2026-09-15 10:58",
   "month": 9,
   "todos": [
     {
       "task_id": "email_misc",
-      "task_name": "重要~(9月9日前回覆教務長室)公務人員",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
       "cat": "J",
-      "action": "大家好 人事室辦理公務人員115年第2季平時考核(紙本考核表另送各單位主任/組長)， 請公務員同仁及二級主管依附檔範例填寫/考評 附檔1- 一般人員 (含組長考",
-      "deadline": "2026-09-09",
+      "action": "[通知] 您有新待辦公文1150020139，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-10",
       "persons": [
         "劉育志"
       ],
@@ -55,12 +55,24 @@
     },
     {
       "task_id": "email_misc",
-      "task_name": "【大學問講座簡報資料】2026年9月​「",
+      "task_name": "郵件讀取通知：RE: 9/14#401專",
       "cat": "J",
-      "action": "敬愛的師長您好： 感謝您參與 2026年9月「大學會員線上講堂」116招生趨勢：國內生源雪崩下的招生策略 ， 提供會議簡報資料供您參考。 1.下載連結：http",
-      "deadline": "2026-09-11",
+      "action": "你寄出的郵件 收件者：canny@tea.ntue.edu.tw 主旨：RE: 9/14#401專戶待查款項-9/21前回覆 傳送日期：2026/9/15 上午",
+      "deadline": "2026-09-14",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t14",
+      "task_name": "外國學生招生",
+      "cat": "D",
+      "action": "外國學生已開始報名，這筆應該是報名費 出納組-陳嘉寧 &lt;canny@tea.ntue.edu.tw&gt; 於 2026年9月14日週一 下午3:03寫道",
+      "deadline": "2026-09-14",
+      "persons": [
+        "劉玉萍"
       ],
       "source": "email",
       "done": false
@@ -69,11 +81,23 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "大家好， 敬送本校115.8.26第250次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
+      "action": "招生組資料如附。另外簡報資料尚在製作中！ 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt",
       "deadline": "2026-09-15",
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "(9月22日中午前)回覆 因應116年度",
+      "cat": "J",
+      "action": "為應116年度中央政府總預算案審議，本校須先行備妥預算審議之相關資料，請各權責單位於115年9月22日中午前提供相關資料。 附件：填列資料說明、本校基本資料(附",
+      "deadline": "2026-09-22",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -94,10 +118,10 @@
   "schedule": [
     {
       "task_id": "email_misc",
-      "task_name": "重要~(9月9日前回覆教務長室)公務人員",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
       "cat": "J",
-      "action": "大家好 人事室辦理公務人員115年第2季平時考核(紙本考核表另送各單位主任/組長)， 請公務員同仁及二級主管依附檔範例填寫/考評 附檔1- 一般人員 (含組長考",
-      "deadline": "2026-09-09",
+      "action": "[通知] 您有新待辦公文1150020139，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-10",
       "persons": [
         "劉育志"
       ],
@@ -145,12 +169,24 @@
     },
     {
       "task_id": "email_misc",
-      "task_name": "【大學問講座簡報資料】2026年9月​「",
+      "task_name": "郵件讀取通知：RE: 9/14#401專",
       "cat": "J",
-      "action": "敬愛的師長您好： 感謝您參與 2026年9月「大學會員線上講堂」116招生趨勢：國內生源雪崩下的招生策略 ， 提供會議簡報資料供您參考。 1.下載連結：http",
-      "deadline": "2026-09-11",
+      "action": "你寄出的郵件 收件者：canny@tea.ntue.edu.tw 主旨：RE: 9/14#401專戶待查款項-9/21前回覆 傳送日期：2026/9/15 上午",
+      "deadline": "2026-09-14",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t14",
+      "task_name": "外國學生招生",
+      "cat": "D",
+      "action": "外國學生已開始報名，這筆應該是報名費 出納組-陳嘉寧 &lt;canny@tea.ntue.edu.tw&gt; 於 2026年9月14日週一 下午3:03寫道",
+      "deadline": "2026-09-14",
+      "persons": [
+        "劉玉萍"
       ],
       "source": "email",
       "done": false
@@ -159,11 +195,23 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "大家好， 敬送本校115.8.26第250次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 本紀",
+      "action": "招生組資料如附。另外簡報資料尚在製作中！ 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt",
       "deadline": "2026-09-15",
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "(9月22日中午前)回覆 因應116年度",
+      "cat": "J",
+      "action": "為應116年度中央政府總預算案審議，本校須先行備妥預算審議之相關資料，請各權責單位於115年9月22日中午前提供相關資料。 附件：填列資料說明、本校基本資料(附",
+      "deadline": "2026-09-22",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
