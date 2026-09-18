@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17 10:57",
+  "updated_at": "2026-09-18 10:44",
   "month": 9,
   "todos": [
     {
@@ -15,11 +15,37 @@
       "done": false
     },
     {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "組長好教務長做個開場白後,再請組長進行內容報告 敬祝 平安順心 張溶玲 敬上 =========================================",
+      "deadline": "2026-09-15",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "好的，我知道了。 我的簡報有更新，新增了第32頁 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.t",
+      "deadline": "2026-09-17",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "email_misc",
       "task_name": "郵件讀取通知：RE: 9/14#401專",
       "cat": "J",
       "action": "你寄出的郵件 收件者：canny@tea.ntue.edu.tw 主旨：RE: 9/14#401專戶待查款項-9/21前回覆 傳送日期：2026/9/15 上午",
-      "deadline": "2026-09-14",
+      "deadline": "2026-09-21",
       "persons": [
         "劉育志"
       ],
@@ -31,22 +57,9 @@
       "task_name": "外國學生招生",
       "cat": "D",
       "action": "外國學生已開始報名，這筆應該是報名費 出納組-陳嘉寧 &lt;canny@tea.ntue.edu.tw&gt; 於 2026年9月14日週一 下午3:03寫道",
-      "deadline": "2026-09-14",
+      "deadline": "2026-09-21",
       "persons": [
         "劉玉萍"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附。另外簡報資料尚在製作中！ 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt",
-      "deadline": "2026-09-15",
-      "persons": [
-        "劉育志",
-        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -65,10 +78,10 @@
     },
     {
       "task_id": "email_misc",
-      "task_name": "(教務會議通知)115-1第1次教務會議",
+      "task_name": "【重要！訂於115年10月7日(三)中午",
       "cat": "J",
-      "action": "大家好： 一、115學年度第1學期第1次教務會議 訂於115年10月21日(星期三)上午9時30分在行政大樓6樓605會議室召開 敬請各位秘書、助教先行協助師長",
-      "deadline": "2026-10-07",
+      "action": "各位師長及同仁好 訂於115年10月7日(星期三)中午12時 10分於行政大樓A605會議室召開115學年度第1學期研究發展會議，敬請協助登入行程。如有提案資料",
+      "deadline": "2026-10-01",
       "persons": [
         "劉育志"
       ],
@@ -90,11 +103,37 @@
       "done": false
     },
     {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "組長好教務長做個開場白後,再請組長進行內容報告 敬祝 平安順心 張溶玲 敬上 =========================================",
+      "deadline": "2026-09-15",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "好的，我知道了。 我的簡報有更新，新增了第32頁 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.t",
+      "deadline": "2026-09-17",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "email_misc",
       "task_name": "郵件讀取通知：RE: 9/14#401專",
       "cat": "J",
       "action": "你寄出的郵件 收件者：canny@tea.ntue.edu.tw 主旨：RE: 9/14#401專戶待查款項-9/21前回覆 傳送日期：2026/9/15 上午",
-      "deadline": "2026-09-14",
+      "deadline": "2026-09-21",
       "persons": [
         "劉育志"
       ],
@@ -106,22 +145,9 @@
       "task_name": "外國學生招生",
       "cat": "D",
       "action": "外國學生已開始報名，這筆應該是報名費 出納組-陳嘉寧 &lt;canny@tea.ntue.edu.tw&gt; 於 2026年9月14日週一 下午3:03寫道",
-      "deadline": "2026-09-14",
+      "deadline": "2026-09-21",
       "persons": [
         "劉玉萍"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附。另外簡報資料尚在製作中！ 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt",
-      "deadline": "2026-09-15",
-      "persons": [
-        "劉育志",
-        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -140,10 +166,10 @@
     },
     {
       "task_id": "email_misc",
-      "task_name": "(教務會議通知)115-1第1次教務會議",
+      "task_name": "【重要！訂於115年10月7日(三)中午",
       "cat": "J",
-      "action": "大家好： 一、115學年度第1學期第1次教務會議 訂於115年10月21日(星期三)上午9時30分在行政大樓6樓605會議室召開 敬請各位秘書、助教先行協助師長",
-      "deadline": "2026-10-07",
+      "action": "各位師長及同仁好 訂於115年10月7日(星期三)中午12時 10分於行政大樓A605會議室召開115學年度第1學期研究發展會議，敬請協助登入行程。如有提案資料",
+      "deadline": "2026-10-01",
       "persons": [
         "劉育志"
       ],
