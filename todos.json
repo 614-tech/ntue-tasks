@@ -1,16 +1,39 @@
 {
-  "updated_at": "2026-09-24 10:44",
+  "updated_at": "2026-09-25 11:00",
   "month": 9,
   "todos": [
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "好的，我知道了。 我的簡報有更新，新增了第32頁 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.t",
-      "deadline": "2026-09-17",
+      "task_id": "t12",
+      "task_name": "碩博士班甄試",
+      "cat": "C",
+      "action": "[通知] 您有新待辦公文1150120266，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-22",
       "persons": [
-        "劉育志",
-        "張禧恕"
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "Re: 【9月22日前回覆】115年度優",
+      "cat": "J",
+      "action": "補修正後之電子檔，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
+      "deadline": "2026-09-22",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t12",
+      "task_name": "碩博士班甄試",
+      "cat": "C",
+      "action": "[通知] 您有新待辦公文1150020680，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-24",
+      "persons": [
+        "王于心"
       ],
       "source": "email",
       "done": false
@@ -20,51 +43,9 @@
       "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
       "cat": "J",
       "action": "[通知] 您有新待辦公文1150020549，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-18",
+      "deadline": "2026-09-30",
       "persons": [
         "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t18",
-      "task_name": "招生專業化計畫",
-      "cat": "F",
-      "action": "[通知] 您有新待辦公文1150020682，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-22",
-      "persons": [
-        "劉育志",
-        "高佳嵐",
-        "張禧恕",
-        "王意涵"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150020686，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-22",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t18",
-      "task_name": "招生專業化計畫",
-      "cat": "F",
-      "action": "[通知] 您有新待辦公文1150000864，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-23",
-      "persons": [
-        "劉育志",
-        "高佳嵐",
-        "張禧恕",
-        "王意涵"
       ],
       "source": "email",
       "done": false
@@ -84,14 +65,37 @@
   ],
   "schedule": [
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "好的，我知道了。 我的簡報有更新，新增了第32頁 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.t",
-      "deadline": "2026-09-17",
+      "task_id": "t12",
+      "task_name": "碩博士班甄試",
+      "cat": "C",
+      "action": "[通知] 您有新待辦公文1150120266，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-22",
       "persons": [
-        "劉育志",
-        "張禧恕"
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "Re: 【9月22日前回覆】115年度優",
+      "cat": "J",
+      "action": "補修正後之電子檔，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026年",
+      "deadline": "2026-09-22",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t12",
+      "task_name": "碩博士班甄試",
+      "cat": "C",
+      "action": "[通知] 您有新待辦公文1150020680，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-09-24",
+      "persons": [
+        "王于心"
       ],
       "source": "email",
       "done": false
@@ -101,51 +105,9 @@
       "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
       "cat": "J",
       "action": "[通知] 您有新待辦公文1150020549，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-18",
+      "deadline": "2026-09-30",
       "persons": [
         "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t18",
-      "task_name": "招生專業化計畫",
-      "cat": "F",
-      "action": "[通知] 您有新待辦公文1150020682，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-22",
-      "persons": [
-        "劉育志",
-        "高佳嵐",
-        "張禧恕",
-        "王意涵"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150020686，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-22",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t18",
-      "task_name": "招生專業化計畫",
-      "cat": "F",
-      "action": "[通知] 您有新待辦公文1150000864，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-09-23",
-      "persons": [
-        "劉育志",
-        "高佳嵐",
-        "張禧恕",
-        "王意涵"
       ],
       "source": "email",
       "done": false
