@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 11:01",
+  "updated_at": "2026-10-21 10:55",
   "month": 10,
   "todos": [
     {
@@ -22,30 +22,6 @@
       "deadline": "2026-10-05",
       "persons": [
         "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "郵件讀取通知：RE: 9/18~30#4",
-      "cat": "J",
-      "action": "你寄出的郵件 收件者：canny@tea.ntue.edu.tw 主旨：RE: 9/18~30#401專戶待查款項-10/5前回覆 傳送日期：2026/10/6",
-      "deadline": "2026-10-05",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "RE: 9/18~30#401專戶待查款",
-      "cat": "J",
-      "action": "嘉寧好: 我們還在請系統廠商協助中.....對帳期限能讓我們寬限到10/8日嗎?感謝您的幫忙~ 能夠提早搞定，回您一定會盡快給您，造成困擾深感抱歉~ 敬祝 順心",
-      "deadline": "2026-10-08",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -146,30 +122,6 @@
       "deadline": "2026-10-05",
       "persons": [
         "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "郵件讀取通知：RE: 9/18~30#4",
-      "cat": "J",
-      "action": "你寄出的郵件 收件者：canny@tea.ntue.edu.tw 主旨：RE: 9/18~30#401專戶待查款項-10/5前回覆 傳送日期：2026/10/6",
-      "deadline": "2026-10-05",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "RE: 9/18~30#401專戶待查款",
-      "cat": "J",
-      "action": "嘉寧好: 我們還在請系統廠商協助中.....對帳期限能讓我們寬限到10/8日嗎?感謝您的幫忙~ 能夠提早搞定，回您一定會盡快給您，造成困擾深感抱歉~ 敬祝 順心",
-      "deadline": "2026-10-08",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
