@@ -1,31 +1,7 @@
 {
-  "updated_at": "2026-10-23 10:58",
+  "updated_at": "2026-10-24 10:55",
   "month": 10,
   "todos": [
-    {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "國立臺北教育大學招生委員會您好： 我是報考貴校116學年度心理與諮商學系碩士班甄試的考生陳鈺妃。因推薦函格式不符而被告知將扣除5分，經查閱招生簡章後，對相關條文",
-      "deadline": "2026-10-04",
-      "persons": [
-        "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "Re: (10月19日中午前回覆)116",
-      "cat": "J",
-      "action": "您好： 招生組資料如附，紙本隨後就到 教務長室張溶玲 &lt;crl@mail.ntue.edu.tw&gt; 於 2026年10月13日週二 下午3:19寫道",
-      "deadline": "2026-10-19",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t12",
       "task_name": "碩博士班甄試",
@@ -64,30 +40,6 @@
     }
   ],
   "schedule": [
-    {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "國立臺北教育大學招生委員會您好： 我是報考貴校116學年度心理與諮商學系碩士班甄試的考生陳鈺妃。因推薦函格式不符而被告知將扣除5分，經查閱招生簡章後，對相關條文",
-      "deadline": "2026-10-04",
-      "persons": [
-        "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "Re: (10月19日中午前回覆)116",
-      "cat": "J",
-      "action": "您好： 招生組資料如附，紙本隨後就到 教務長室張溶玲 &lt;crl@mail.ntue.edu.tw&gt; 於 2026年10月13日週二 下午3:19寫道",
-      "deadline": "2026-10-19",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t12",
       "task_name": "碩博士班甄試",
