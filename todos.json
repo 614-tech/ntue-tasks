@@ -1,19 +1,7 @@
 {
-  "updated_at": "2026-10-24 10:55",
+  "updated_at": "2026-10-25 10:48",
   "month": 10,
   "todos": [
-    {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "[通知] 您有新待辦公文1150021773，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-20",
-      "persons": [
-        "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t14",
       "task_name": "外國學生招生",
@@ -34,6 +22,18 @@
       "deadline": "2026-10-28",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t12",
+      "task_name": "碩博士班甄試",
+      "cat": "C",
+      "action": "[通知] 您有新待辦公文1150021773，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-10-29",
+      "persons": [
+        "王于心"
       ],
       "source": "email",
       "done": false
@@ -41,18 +41,6 @@
   ],
   "schedule": [
     {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "[通知] 您有新待辦公文1150021773，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-20",
-      "persons": [
-        "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t14",
       "task_name": "外國學生招生",
       "cat": "D",
@@ -72,6 +60,18 @@
       "deadline": "2026-10-28",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t12",
+      "task_name": "碩博士班甄試",
+      "cat": "C",
+      "action": "[通知] 您有新待辦公文1150021773，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-10-29",
+      "persons": [
+        "王于心"
       ],
       "source": "email",
       "done": false
