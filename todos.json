@@ -1,7 +1,105 @@
 {
-  "updated_at": "2026-10-26 10:45",
+  "updated_at": "2026-10-27 11:20",
   "month": 10,
   "todos": [
+    {
+      "task_id": "t12",
+      "task_name": "碩博士班甄試",
+      "cat": "C",
+      "action": "國立臺北教育大學招生委員會您好： 我是報考貴校116學年度心理與諮商學系碩士班甄試的考生陳鈺妃。因推薦函格式不符而被告知將扣除5分，經查閱招生簡章後，對相關條文",
+      "deadline": "2026-10-04",
+      "persons": [
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "您好： 招生組資料如附，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt;",
+      "deadline": "2026-10-13",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "不好意思遲交了，招生組回復資料共三件，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&",
+      "deadline": "2026-10-15",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t37",
+      "task_name": "深耕經費管理",
+      "cat": "I",
+      "action": "From: 學務處生輔組-連御筑 &lt;yuchu@mail.ntue.edu.tw&gt; Sent: Thursday, October 8, 2026",
+      "deadline": "2026-10-16",
+      "persons": [
+        "趙沛滋"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "Re: (10月19日中午前回覆)116",
+      "cat": "J",
+      "action": "您好： 招生組資料如附，紙本隨後就到 教務長室張溶玲 &lt;crl@mail.ntue.edu.tw&gt; 於 2026年10月13日週二 下午3:19寫道",
+      "deadline": "2026-10-19",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150021544，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-10-20",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150000926，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-10-21",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t45",
+      "task_name": "年度校務基金預算書與績效報告",
+      "cat": "K",
+      "action": "您好： 招生組修正頁碼為p.74及p.213 請查收，謝謝 (以此檔更新)國北教大校務績效報告(109.08.01–115.09.30)_修.docx 教務處O",
+      "deadline": "2026-10-27",
+      "persons": [
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
     {
       "task_id": "email_misc",
       "task_name": "提案通知：115學年度第1次校務發展委員",
@@ -15,25 +113,26 @@
       "done": false
     },
     {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "[通知] 您有新待辦公文1150021773，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-29",
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好， 敬送本校115年10月份主管會報紀錄如附件，請查收。 可點選各項目次或工具列書籤，逕連結至該案內容。 115年11月份主管會報，訂於115.11.9(",
+      "deadline": "2026-11-02",
       "persons": [
-        "王于心"
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
     },
     {
-      "task_id": "t14",
-      "task_name": "外國學生招生",
-      "cat": "D",
-      "action": "[通知] 您有新待辦公文1150021859，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-30",
+      "task_id": "t41",
+      "task_name": "校務評鑑自我改善計畫",
+      "cat": "J",
+      "action": "大家好， 本校第57次校務會議訂於115年12月8日(星期二)下午1:30召開， 敬請貴單位於115年11月6日(星期五)中午前提供重要工作報告及師生獲獎情形資",
+      "deadline": "2026-11-06",
       "persons": [
-        "劉玉萍"
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -41,6 +140,104 @@
   ],
   "schedule": [
     {
+      "task_id": "t12",
+      "task_name": "碩博士班甄試",
+      "cat": "C",
+      "action": "國立臺北教育大學招生委員會您好： 我是報考貴校116學年度心理與諮商學系碩士班甄試的考生陳鈺妃。因推薦函格式不符而被告知將扣除5分，經查閱招生簡章後，對相關條文",
+      "deadline": "2026-10-04",
+      "persons": [
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "您好： 招生組資料如附，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt;",
+      "deadline": "2026-10-13",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "不好意思遲交了，招生組回復資料共三件，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&",
+      "deadline": "2026-10-15",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t37",
+      "task_name": "深耕經費管理",
+      "cat": "I",
+      "action": "From: 學務處生輔組-連御筑 &lt;yuchu@mail.ntue.edu.tw&gt; Sent: Thursday, October 8, 2026",
+      "deadline": "2026-10-16",
+      "persons": [
+        "趙沛滋"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "Re: (10月19日中午前回覆)116",
+      "cat": "J",
+      "action": "您好： 招生組資料如附，紙本隨後就到 教務長室張溶玲 &lt;crl@mail.ntue.edu.tw&gt; 於 2026年10月13日週二 下午3:19寫道",
+      "deadline": "2026-10-19",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150021544，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-10-20",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150000926，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-10-21",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t45",
+      "task_name": "年度校務基金預算書與績效報告",
+      "cat": "K",
+      "action": "您好： 招生組修正頁碼為p.74及p.213 請查收，謝謝 (以此檔更新)國北教大校務績效報告(109.08.01–115.09.30)_修.docx 教務處O",
+      "deadline": "2026-10-27",
+      "persons": [
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "email_misc",
       "task_name": "提案通知：115學年度第1次校務發展委員",
       "cat": "J",
@@ -53,25 +250,26 @@
       "done": false
     },
     {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "[通知] 您有新待辦公文1150021773，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-29",
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好， 敬送本校115年10月份主管會報紀錄如附件，請查收。 可點選各項目次或工具列書籤，逕連結至該案內容。 115年11月份主管會報，訂於115.11.9(",
+      "deadline": "2026-11-02",
       "persons": [
-        "王于心"
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
     },
     {
-      "task_id": "t14",
-      "task_name": "外國學生招生",
-      "cat": "D",
-      "action": "[通知] 您有新待辦公文1150021859，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-30",
+      "task_id": "t41",
+      "task_name": "校務評鑑自我改善計畫",
+      "cat": "J",
+      "action": "大家好， 本校第57次校務會議訂於115年12月8日(星期二)下午1:30召開， 敬請貴單位於115年11月6日(星期五)中午前提供重要工作報告及師生獲獎情形資",
+      "deadline": "2026-11-06",
       "persons": [
-        "劉玉萍"
+        "劉育志"
       ],
       "source": "email",
       "done": false
