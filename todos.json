@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27 11:20",
+  "updated_at": "2026-10-28 11:36",
   "month": 10,
   "todos": [
     {
@@ -18,19 +18,6 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "您好： 招生組資料如附，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt;",
-      "deadline": "2026-10-13",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
       "action": "不好意思遲交了，招生組回復資料共三件，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&",
       "deadline": "2026-10-15",
       "persons": [
@@ -41,47 +28,11 @@
       "done": false
     },
     {
-      "task_id": "t37",
-      "task_name": "深耕經費管理",
-      "cat": "I",
-      "action": "From: 學務處生輔組-連御筑 &lt;yuchu@mail.ntue.edu.tw&gt; Sent: Thursday, October 8, 2026",
-      "deadline": "2026-10-16",
-      "persons": [
-        "趙沛滋"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "email_misc",
       "task_name": "Re: (10月19日中午前回覆)116",
       "cat": "J",
       "action": "您好： 招生組資料如附，紙本隨後就到 教務長室張溶玲 &lt;crl@mail.ntue.edu.tw&gt; 於 2026年10月13日週二 下午3:19寫道",
       "deadline": "2026-10-19",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150021544，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-20",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150000926，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-21",
       "persons": [
         "劉育志"
       ],
@@ -101,11 +52,35 @@
       "done": false
     },
     {
+      "task_id": "t01",
+      "task_name": "特殊選才",
+      "cat": "A",
+      "action": "[通知] 您有新待辦公文1150120302，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-10-28",
+      "persons": [
+        "劉玉萍"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "email_misc",
       "task_name": "提案通知：115學年度第1次校務發展委員",
       "cat": "J",
       "action": "國立臺北教育大學 通知 113年10月09日 本校115學年度第1次校務發展委員會會議，預訂於115年11月03日（星期二）15時30分於行政大樓A605會議室",
       "deadline": "2026-10-28",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "(第二次公告)【校運會報名】檢送本校13",
+      "cat": "J",
+      "action": "各位長官同仁好： 一、本校131周年校慶暨115學年度運動會教職員工競賽即日起開放報名至115年11月2日(星期一)中午12點前截止，敬請同仁踴躍報名參加!!",
+      "deadline": "2026-11-02",
       "persons": [
         "劉育志"
       ],
@@ -155,19 +130,6 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "您好： 招生組資料如附，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt;",
-      "deadline": "2026-10-13",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
       "action": "不好意思遲交了，招生組回復資料共三件，請查收 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&",
       "deadline": "2026-10-15",
       "persons": [
@@ -178,47 +140,11 @@
       "done": false
     },
     {
-      "task_id": "t37",
-      "task_name": "深耕經費管理",
-      "cat": "I",
-      "action": "From: 學務處生輔組-連御筑 &lt;yuchu@mail.ntue.edu.tw&gt; Sent: Thursday, October 8, 2026",
-      "deadline": "2026-10-16",
-      "persons": [
-        "趙沛滋"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "email_misc",
       "task_name": "Re: (10月19日中午前回覆)116",
       "cat": "J",
       "action": "您好： 招生組資料如附，紙本隨後就到 教務長室張溶玲 &lt;crl@mail.ntue.edu.tw&gt; 於 2026年10月13日週二 下午3:19寫道",
       "deadline": "2026-10-19",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150021544，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-20",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150000926，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-10-21",
       "persons": [
         "劉育志"
       ],
@@ -238,11 +164,35 @@
       "done": false
     },
     {
+      "task_id": "t01",
+      "task_name": "特殊選才",
+      "cat": "A",
+      "action": "[通知] 您有新待辦公文1150120302，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-10-28",
+      "persons": [
+        "劉玉萍"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "email_misc",
       "task_name": "提案通知：115學年度第1次校務發展委員",
       "cat": "J",
       "action": "國立臺北教育大學 通知 113年10月09日 本校115學年度第1次校務發展委員會會議，預訂於115年11月03日（星期二）15時30分於行政大樓A605會議室",
       "deadline": "2026-10-28",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "(第二次公告)【校運會報名】檢送本校13",
+      "cat": "J",
+      "action": "各位長官同仁好： 一、本校131周年校慶暨115學年度運動會教職員工競賽即日起開放報名至115年11月2日(星期一)中午12點前截止，敬請同仁踴躍報名參加!!",
+      "deadline": "2026-11-02",
       "persons": [
         "劉育志"
       ],
