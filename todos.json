@@ -1,6 +1,58 @@
 {
-  "updated_at": "2026-11-01 11:51",
+  "updated_at": "2026-11-02 11:55",
   "month": 11,
-  "todos": [],
-  "schedule": []
+  "todos": [
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "您好： 附檔請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
+      "deadline": "2026-11-02",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t05",
+      "task_name": "暑假轉學考",
+      "cat": "A",
+      "action": "[通知] 您有新待辦公文1150022143，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-05",
+      "persons": [
+        "趙沛滋"
+      ],
+      "source": "email",
+      "done": false
+    }
+  ],
+  "schedule": [
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "您好： 附檔請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
+      "deadline": "2026-11-02",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t05",
+      "task_name": "暑假轉學考",
+      "cat": "A",
+      "action": "[通知] 您有新待辦公文1150022143，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-05",
+      "persons": [
+        "趙沛滋"
+      ],
+      "source": "email",
+      "done": false
+    }
+  ]
 }
