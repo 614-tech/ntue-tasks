@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 12:57",
+  "updated_at": "2026-11-04 12:28",
   "month": 11,
   "todos": [
     {
@@ -11,18 +11,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t07",
-      "task_name": "音樂系單獨招生",
-      "cat": "A",
-      "action": "[通知] 您有新待辦公文1150022328，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-03",
-      "persons": [
-        "余艾璇"
       ],
       "source": "email",
       "done": false
@@ -50,18 +38,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t07",
-      "task_name": "音樂系單獨招生",
-      "cat": "A",
-      "action": "[通知] 您有新待辦公文1150022328，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-03",
-      "persons": [
-        "余艾璇"
       ],
       "source": "email",
       "done": false
