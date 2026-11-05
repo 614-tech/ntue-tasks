@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04 12:28",
+  "updated_at": "2026-11-05 12:43",
   "month": 11,
   "todos": [
     {
@@ -16,6 +16,18 @@
       "done": false
     },
     {
+      "task_id": "t46",
+      "task_name": "資通訊經費預算表填報",
+      "cat": "K",
+      "action": "總務處保管組、計網中心 通知 115年11月5日 受文者 ： 本校各單位 主 旨 ： 為循例進行本校117年度「資訊設備預算分配」初審，及配合「資通訊經費預算表",
+      "deadline": "2026-11-05",
+      "persons": [
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t41",
       "task_name": "校務評鑑自我改善計畫",
       "cat": "J",
@@ -23,6 +35,19 @@
       "deadline": "2026-11-06",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好， 敬送本校115.10.28第252次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 1",
+      "deadline": "2026-11-12",
+      "persons": [
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -43,6 +68,18 @@
       "done": false
     },
     {
+      "task_id": "t46",
+      "task_name": "資通訊經費預算表填報",
+      "cat": "K",
+      "action": "總務處保管組、計網中心 通知 115年11月5日 受文者 ： 本校各單位 主 旨 ： 為循例進行本校117年度「資訊設備預算分配」初審，及配合「資通訊經費預算表",
+      "deadline": "2026-11-05",
+      "persons": [
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t41",
       "task_name": "校務評鑑自我改善計畫",
       "cat": "J",
@@ -50,6 +87,19 @@
       "deadline": "2026-11-06",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "大家好， 敬送本校115.10.28第252次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 1",
+      "deadline": "2026-11-12",
+      "persons": [
+        "劉育志",
+        "張禧恕"
       ],
       "source": "email",
       "done": false
