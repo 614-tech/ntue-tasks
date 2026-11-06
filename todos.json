@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 12:43",
+  "updated_at": "2026-11-06 12:43",
   "month": 11,
   "todos": [
     {
@@ -11,6 +11,30 @@
       "persons": [
         "劉育志",
         "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150022416，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-04",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150000989，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-05",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -28,6 +52,19 @@
       "done": false
     },
     {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生組資料如附，請查收，謝謝 招生與宣傳組-第57次校務會議重點工作報告(1).doc 教務處Office of Academic Affairs &lt;st",
+      "deadline": "2026-11-06",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t41",
       "task_name": "校務評鑑自我改善計畫",
       "cat": "J",
@@ -35,6 +72,18 @@
       "deadline": "2026-11-06",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t29",
+      "task_name": "自衛消防編組訓練",
+      "cat": "H",
+      "action": "大家好 115年下半年度自衛消防編組訓練(結合民防相關法令訓練)，訂於115年11月26日(四)上午09：00-12：00，於行政大樓605會議室辦理，授課教官",
+      "deadline": "2026-11-11",
+      "persons": [
+        "王意涵"
       ],
       "source": "email",
       "done": false
@@ -68,6 +117,30 @@
       "done": false
     },
     {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150022416，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-04",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150000989，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-05",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t46",
       "task_name": "資通訊經費預算表填報",
       "cat": "K",
@@ -80,6 +153,19 @@
       "done": false
     },
     {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生組資料如附，請查收，謝謝 招生與宣傳組-第57次校務會議重點工作報告(1).doc 教務處Office of Academic Affairs &lt;st",
+      "deadline": "2026-11-06",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t41",
       "task_name": "校務評鑑自我改善計畫",
       "cat": "J",
@@ -87,6 +173,18 @@
       "deadline": "2026-11-06",
       "persons": [
         "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t29",
+      "task_name": "自衛消防編組訓練",
+      "cat": "H",
+      "action": "大家好 115年下半年度自衛消防編組訓練(結合民防相關法令訓練)，訂於115年11月26日(四)上午09：00-12：00，於行政大樓605會議室辦理，授課教官",
+      "deadline": "2026-11-11",
+      "persons": [
+        "王意涵"
       ],
       "source": "email",
       "done": false
