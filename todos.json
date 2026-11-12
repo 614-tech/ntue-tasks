@@ -1,20 +1,7 @@
 {
-  "updated_at": "2026-11-11 12:12",
+  "updated_at": "2026-11-12 13:24",
   "month": 11,
   "todos": [
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "您好： 附檔請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
-      "deadline": "2026-11-02",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t46",
       "task_name": "資通訊經費預算表填報",
@@ -53,14 +40,13 @@
       "done": false
     },
     {
-      "task_id": "t17",
-      "task_name": "身障甄試試務（北四區）",
-      "cat": "E",
-      "action": "[通知] 您有新待辦公文1150022684，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-10",
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150022743，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-11",
       "persons": [
-        "趙沛滋",
-        "劉玉萍"
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -81,7 +67,7 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "大家好， 敬送本校115.10.28第252次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 1",
+      "action": "您好： 招生組資料如附，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt;",
       "deadline": "2026-11-12",
       "persons": [
         "劉育志",
@@ -98,6 +84,18 @@
       "deadline": "2026-11-13",
       "persons": [
         "余艾璇"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "【轉知】「115學年度Fulbright",
+      "cat": "J",
+      "action": "一、依據學術交流基金會115年10月27日115會字第1150000596號函辦理。 二、本活動係教育部與學術交流基金會合作辦理，預計遴選50名具備良好英語能力",
+      "deadline": "2026-11-27",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -118,19 +116,6 @@
   ],
   "schedule": [
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "您好： 附檔請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
-      "deadline": "2026-11-02",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t46",
       "task_name": "資通訊經費預算表填報",
       "cat": "K",
@@ -168,14 +153,13 @@
       "done": false
     },
     {
-      "task_id": "t17",
-      "task_name": "身障甄試試務（北四區）",
-      "cat": "E",
-      "action": "[通知] 您有新待辦公文1150022684，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-10",
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150022743，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-11",
       "persons": [
-        "趙沛滋",
-        "劉玉萍"
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -196,7 +180,7 @@
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
-      "action": "大家好， 敬送本校115.10.28第252次行政會議紀錄如附件，並公告於秘書室網頁，連結網址https://reurl.cc/AylGDd，敬請下載參閱。 1",
+      "action": "您好： 招生組資料如附，請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt;",
       "deadline": "2026-11-12",
       "persons": [
         "劉育志",
@@ -213,6 +197,18 @@
       "deadline": "2026-11-13",
       "persons": [
         "余艾璇"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "【轉知】「115學年度Fulbright",
+      "cat": "J",
+      "action": "一、依據學術交流基金會115年10月27日115會字第1150000596號函辦理。 二、本活動係教育部與學術交流基金會合作辦理，預計遴選50名具備良好英語能力",
+      "deadline": "2026-11-27",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
