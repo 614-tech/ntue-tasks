@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 12:39",
+  "updated_at": "2026-11-14 12:34",
   "month": 11,
   "todos": [
     {
@@ -11,31 +11,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收，謝謝 招生與宣傳組-第57次校務會議重點工作報告(1).doc 教務處Office of Academic Affairs &lt;st",
-      "deadline": "2026-11-06",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t41",
-      "task_name": "校務評鑑自我改善計畫",
-      "cat": "J",
-      "action": "大家好， 本校第57次校務會議訂於115年12月8日(星期二)下午1:30召開， 敬請貴單位於115年11月6日(星期五)中午前提供重要工作報告及師生獲獎情形資",
-      "deadline": "2026-11-06",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -90,6 +65,18 @@
       "done": false
     },
     {
+      "task_id": "t25",
+      "task_name": "網路廣告行銷與管理",
+      "cat": "G",
+      "action": "🚨 報名將於本週日（11/15）截止，名額有限，敬請把握最後機會！ 台灣的故事如何透過英語媒體走向世界？國際媒體又有哪些值得探索的職涯機會？ 國立臺北教育大學國",
+      "deadline": "2026-11-15",
+      "persons": [
+        "陳佳妤"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t46",
       "task_name": "資通訊經費預算表填報",
       "cat": "K",
@@ -97,6 +84,31 @@
       "deadline": "2026-11-23",
       "persons": [
         "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生組資料如附，請查收，謝謝 招生與宣傳組-第57次校務會議重點工作報告(1).doc 教務處Office of Academic Affairs &lt;st",
+      "deadline": "2026-12-08",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t41",
+      "task_name": "校務評鑑自我改善計畫",
+      "cat": "J",
+      "action": "大家好， 本校第57次校務會議訂於115年12月8日(星期二)下午1:30召開， 敬請貴單位於115年11月6日(星期五)中午前提供重要工作報告及師生獲獎情形資",
+      "deadline": "2026-12-08",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -130,31 +142,6 @@
       "done": false
     },
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收，謝謝 招生與宣傳組-第57次校務會議重點工作報告(1).doc 教務處Office of Academic Affairs &lt;st",
-      "deadline": "2026-11-06",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t41",
-      "task_name": "校務評鑑自我改善計畫",
-      "cat": "J",
-      "action": "大家好， 本校第57次校務會議訂於115年12月8日(星期二)下午1:30召開， 敬請貴單位於115年11月6日(星期五)中午前提供重要工作報告及師生獲獎情形資",
-      "deadline": "2026-11-06",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t29",
       "task_name": "自衛消防編組訓練",
       "cat": "H",
@@ -204,6 +191,18 @@
       "done": false
     },
     {
+      "task_id": "t25",
+      "task_name": "網路廣告行銷與管理",
+      "cat": "G",
+      "action": "🚨 報名將於本週日（11/15）截止，名額有限，敬請把握最後機會！ 台灣的故事如何透過英語媒體走向世界？國際媒體又有哪些值得探索的職涯機會？ 國立臺北教育大學國",
+      "deadline": "2026-11-15",
+      "persons": [
+        "陳佳妤"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t46",
       "task_name": "資通訊經費預算表填報",
       "cat": "K",
@@ -211,6 +210,31 @@
       "deadline": "2026-11-23",
       "persons": [
         "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t40",
+      "task_name": "各類工作報告",
+      "cat": "J",
+      "action": "招生組資料如附，請查收，謝謝 招生與宣傳組-第57次校務會議重點工作報告(1).doc 教務處Office of Academic Affairs &lt;st",
+      "deadline": "2026-12-08",
+      "persons": [
+        "劉育志",
+        "張禧恕"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t41",
+      "task_name": "校務評鑑自我改善計畫",
+      "cat": "J",
+      "action": "大家好， 本校第57次校務會議訂於115年12月8日(星期二)下午1:30召開， 敬請貴單位於115年11月6日(星期五)中午前提供重要工作報告及師生獲獎情形資",
+      "deadline": "2026-12-08",
+      "persons": [
+        "劉育志"
       ],
       "source": "email",
       "done": false
