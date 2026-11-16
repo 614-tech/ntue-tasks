@@ -1,32 +1,7 @@
 {
-  "updated_at": "2026-11-15 12:23",
+  "updated_at": "2026-11-16 12:21",
   "month": 11,
   "todos": [
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "您好： 附檔請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
-      "deadline": "2026-11-02",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150022744，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-11",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
     {
       "task_id": "t29",
       "task_name": "自衛消防編組訓練",
@@ -40,18 +15,6 @@
       "done": false
     },
     {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150022818，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-12",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t40",
       "task_name": "各類工作報告",
       "cat": "J",
@@ -60,30 +23,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t02",
-      "task_name": "申請入學",
-      "cat": "A",
-      "action": "[通知] 您有新待辦公文1150022849，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-13",
-      "persons": [
-        "余艾璇"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t25",
-      "task_name": "網路廣告行銷與管理",
-      "cat": "G",
-      "action": "🚨 報名將於本週日（11/15）截止，名額有限，敬請把握最後機會！ 台灣的故事如何透過英語媒體走向世界？國際媒體又有哪些值得探索的職涯機會？ 國立臺北教育大學國",
-      "deadline": "2026-11-15",
-      "persons": [
-        "陳佳妤"
       ],
       "source": "email",
       "done": false
@@ -153,31 +92,6 @@
   ],
   "schedule": [
     {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "您好： 附檔請查收，謝謝 教務處Office of Academic Affairs &lt;study@mail.ntue.edu.tw&gt; 於 2026",
-      "deadline": "2026-11-02",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150022744，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-11",
-      "persons": [
-        "劉育志"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
       "task_id": "t29",
       "task_name": "自衛消防編組訓練",
       "cat": "H",
@@ -185,18 +99,6 @@
       "deadline": "2026-11-11",
       "persons": [
         "王意涵"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150022818，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-12",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -210,30 +112,6 @@
       "persons": [
         "劉育志",
         "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t02",
-      "task_name": "申請入學",
-      "cat": "A",
-      "action": "[通知] 您有新待辦公文1150022849，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-13",
-      "persons": [
-        "余艾璇"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t25",
-      "task_name": "網路廣告行銷與管理",
-      "cat": "G",
-      "action": "🚨 報名將於本週日（11/15）截止，名額有限，敬請把握最後機會！ 台灣的故事如何透過英語媒體走向世界？國際媒體又有哪些值得探索的職涯機會？ 國立臺北教育大學國",
-      "deadline": "2026-11-15",
-      "persons": [
-        "陳佳妤"
       ],
       "source": "email",
       "done": false
