@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24 15:58",
+  "updated_at": "2026-11-25 14:34",
   "month": 11,
   "todos": [
     {
@@ -23,30 +23,6 @@
       "deadline": "2026-11-23",
       "persons": [
         "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "[通知] 您有新待辦公文1150120325，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-24",
-      "persons": [
-        "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150022924，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-25",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
@@ -148,30 +124,6 @@
       "deadline": "2026-11-23",
       "persons": [
         "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t12",
-      "task_name": "碩博士班甄試",
-      "cat": "C",
-      "action": "[通知] 您有新待辦公文1150120325，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-24",
-      "persons": [
-        "王于心"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "email_misc",
-      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
-      "cat": "J",
-      "action": "[通知] 您有新待辦公文1150022924，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
-      "deadline": "2026-11-25",
-      "persons": [
-        "劉育志"
       ],
       "source": "email",
       "done": false
