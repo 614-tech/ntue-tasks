@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27 14:16",
+  "updated_at": "2026-11-28 13:55",
   "month": 11,
   "todos": [
     {
@@ -21,6 +21,18 @@
       "cat": "K",
       "action": "總務處保管組、計網中心 通知 115年11月5日 受文者 ： 本校各單位 主 旨 ： 為循例進行本校117年度「資訊設備預算分配」初審，及配合「資通訊經費預算表",
       "deadline": "2026-11-23",
+      "persons": [
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "t13",
+      "task_name": "碩博士班考試",
+      "cat": "C",
+      "action": "[通知] 您有新待辦公文1150023339，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-26",
       "persons": [
         "王于心"
       ],
@@ -52,6 +64,30 @@
       "done": false
     },
     {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150023434，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-27",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "【轉知】教育部青年發展署推動116年「青",
+      "cat": "J",
+      "action": "主旨：有關教育部青年發展署推動116年「青年百億海外圓夢基金計畫」，全額補助我國18-30歲青年赴法國與德國相關科技產業與前瞻技術發展機構交流見習， 報名截止日",
+      "deadline": "2026-11-30",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t02",
       "task_name": "申請入學",
       "cat": "A",
@@ -71,32 +107,6 @@
       "deadline": "2026-12-01",
       "persons": [
         "余艾璇"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收，謝謝 招生與宣傳組-第57次校務會議重點工作報告(1).doc 教務處Office of Academic Affairs &lt;st",
-      "deadline": "2026-12-08",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "各位委員、師長、同仁好： 115學年度第1學期第2次教務會議 訂於115年12月23日(星期三)上午9點30分於行政大樓6樓605會議室召開(開會通知單諒達)",
-      "deadline": "2026-12-09",
-      "persons": [
-        "劉育志",
-        "張禧恕"
       ],
       "source": "email",
       "done": false
@@ -129,6 +139,18 @@
       "done": false
     },
     {
+      "task_id": "t13",
+      "task_name": "碩博士班考試",
+      "cat": "C",
+      "action": "[通知] 您有新待辦公文1150023339，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-26",
+      "persons": [
+        "王于心"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "email_misc",
       "task_name": "(急件!報名時間即將截止!)【研習訊息】",
       "cat": "J",
@@ -153,6 +175,30 @@
       "done": false
     },
     {
+      "task_id": "email_misc",
+      "task_name": "[公文線上簽核系統通知]您有新待辦公文!",
+      "cat": "J",
+      "action": "[通知] 您有新待辦公文1150023434，請至公文線上簽核系統入口網辦理 承辦單位：招生與宣傳組 收創文號 收文日期 限辦日期 承辦人 案由 處理狀況 備註",
+      "deadline": "2026-11-27",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
+      "task_id": "email_misc",
+      "task_name": "【轉知】教育部青年發展署推動116年「青",
+      "cat": "J",
+      "action": "主旨：有關教育部青年發展署推動116年「青年百億海外圓夢基金計畫」，全額補助我國18-30歲青年赴法國與德國相關科技產業與前瞻技術發展機構交流見習， 報名截止日",
+      "deadline": "2026-11-30",
+      "persons": [
+        "劉育志"
+      ],
+      "source": "email",
+      "done": false
+    },
+    {
       "task_id": "t02",
       "task_name": "申請入學",
       "cat": "A",
@@ -172,32 +218,6 @@
       "deadline": "2026-12-01",
       "persons": [
         "余艾璇"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "招生組資料如附，請查收，謝謝 招生與宣傳組-第57次校務會議重點工作報告(1).doc 教務處Office of Academic Affairs &lt;st",
-      "deadline": "2026-12-08",
-      "persons": [
-        "劉育志",
-        "張禧恕"
-      ],
-      "source": "email",
-      "done": false
-    },
-    {
-      "task_id": "t40",
-      "task_name": "各類工作報告",
-      "cat": "J",
-      "action": "各位委員、師長、同仁好： 115學年度第1學期第2次教務會議 訂於115年12月23日(星期三)上午9點30分於行政大樓6樓605會議室召開(開會通知單諒達)",
-      "deadline": "2026-12-09",
-      "persons": [
-        "劉育志",
-        "張禧恕"
       ],
       "source": "email",
       "done": false
